@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - PatrolPoint
+  - Obstacle
+  - Rempah
+  - Puzzle
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Object
+    uniqueID: 3508767755
+    locked: 0
+  - name: Puzzle
+    uniqueID: 391426421
+    locked: 0
+  - name: Pieces
+    uniqueID: 2382395073
+    locked: 0
+  - name: Backgorund
+    uniqueID: 345422463
+    locked: 0
