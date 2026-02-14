@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
+    public static List<Vector3> positionHistory = new List<Vector3>();
+    public int maxHistory = 50;
+
     private AudioManager audioManager;  // Reference to the AudioManager
 
     Vector2 movement;
@@ -16,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private bool isWalking = false;  // Flag to track whether the player is walking
 
     public VectorValue startingPosition;
+
+    public bool IsWalking => isWalking;
 
     private void Start()
     {
@@ -75,6 +80,15 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    void LateUpdate()
+    {
+        positionHistory.Insert(0, transform.position);
+
+        if (positionHistory.Count > maxHistory)
+            positionHistory.RemoveAt(positionHistory.Count - 1);
+    }
+
 
     void FixedUpdate()
     {
