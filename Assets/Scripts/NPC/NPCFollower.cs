@@ -4,7 +4,7 @@ public class NPCFollower : MonoBehaviour
 {
     private PlayerController player;
 
-    public int followIndex = 10; // semakin besar semakin jauh mengikuti
+    public int followIndex = 10;
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
@@ -31,7 +31,7 @@ public class NPCFollower : MonoBehaviour
             {
                 Vector2 direction = (targetPosition - transform.position).normalized;
 
-                lastDirection = direction; // simpan arah terakhir
+                lastDirection = direction;
 
                 rb.MovePosition(Vector2.MoveTowards(
                     rb.position,
@@ -41,14 +41,16 @@ public class NPCFollower : MonoBehaviour
 
                 animator.SetFloat("Horizontal", direction.x);
                 animator.SetFloat("Vertical", direction.y);
+
+                animator.SetFloat("LastMoveHorizontal", direction.x);
+                animator.SetFloat("LastMoveVertical", direction.y);
+
                 animator.SetFloat("Speed", 1f);
             }
             else
             {
                 // IDLE
                 animator.SetFloat("Speed", 0f);
-                animator.SetFloat("Horizontal", lastDirection.x);
-                animator.SetFloat("Vertical", lastDirection.y);
             }
         }
     }

@@ -56,6 +56,9 @@ public class QuestManager : MonoBehaviour
     }
     public Quest GetCurrentQuest()
     {
+        if (currentQuestIndex >= quests.Count)
+        return null;
+
         return quests[currentQuestIndex];
     }
 }

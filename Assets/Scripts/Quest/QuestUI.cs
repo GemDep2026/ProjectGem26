@@ -7,18 +7,27 @@ public class QuestUI : MonoBehaviour
 
     void Update()
     {
+        if (QuestManager.Instance == null) return;
+
         Quest current = QuestManager.Instance.GetCurrentQuest();
+
+        if (current == null)
+        {
+            questText.text = "All Quests Completed!";
+            return;
+        }
 
         string text = current.questName + "\n";
 
         foreach(var obj in current.objectives)
         {
             if(obj.isCompleted)
-                text += "☑ " + obj.objectiveName + "\n";
+                text += "[v] " + obj.objectiveName + "\n";
             else
-                text += "☐ " + obj.objectiveName + "\n";
+                text += "[ ] " + obj.objectiveName + "\n";
         }
 
         questText.text = text;
     }
 }
+

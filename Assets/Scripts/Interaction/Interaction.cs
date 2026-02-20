@@ -63,11 +63,11 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        if (ItemDatabase.instance.itemListDestroy.Contains(itemId))
-        {
-            Destroy(gameObject);
-        }
-    }
+    // private void Start()
+    // {
+    //     if (ItemDatabase.instance.itemListDestroy.Contains(itemId))
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    // }
 }

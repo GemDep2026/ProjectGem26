@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     public static List<Vector3> positionHistory = new List<Vector3>();
-    public int maxHistory = 50;
+    public int maxHistory = 100;
 
     private AudioManager audioManager;  // Reference to the AudioManager
 
@@ -40,15 +40,27 @@ public class PlayerController : MonoBehaviour
 
     public void SetMovement(Vector2 inputMovement)
     {
-        movement = inputMovement;
+        if (Mathf.Abs(inputMovement.x) > Mathf.Abs(inputMovement.y))
+        {
+            movement = new Vector2(Mathf.Sign(inputMovement.x), 0);
+        }
+        else if (Mathf.Abs(inputMovement.y) > 0)
+        {
+            movement = new Vector2(0, Mathf.Sign(inputMovement.y));
+        }
+        else
+        {
+            movement = Vector2.zero;
+        }
+
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (inputMovement.x == 1 || inputMovement.x == -1 || inputMovement.y == 1 || inputMovement.y == -1)
+        if (movement != Vector2.zero)
         {
-            animator.SetFloat("LastMoveHorizontal", inputMovement.x);
-            animator.SetFloat("LastMoveVertical", inputMovement.y);
+            animator.SetFloat("LastMoveHorizontal", movement.x);
+            animator.SetFloat("LastMoveVertical", movement.y);
         }
     }
 

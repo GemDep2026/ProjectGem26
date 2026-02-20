@@ -10,6 +10,13 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    [Header("Quest")]
+    public int questID = -1;
+    public int objectiveIndex = -1;
+    public bool completeObjectiveAfterDialogue = false;
+
+    private bool dialogueWasPlaying = false;
+
     private bool playerInRange;
 
     private void Awake()
@@ -32,6 +39,19 @@ public class DialogueTrigger : MonoBehaviour
         {
             visualCue.SetActive(false);
         }
+
+        bool isPlaying = DialogueManager.GetInstance().DialogueIsPlaying;
+
+        if (dialogueWasPlaying && !isPlaying)
+        {
+            // Dialogue baru saja selesai
+            if (completeObjectiveAfterDialogue && questID != -1)
+            {
+                QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
+            }
+        }
+
+        dialogueWasPlaying = isPlaying;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
