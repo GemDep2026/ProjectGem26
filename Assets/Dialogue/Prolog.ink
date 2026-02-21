@@ -13,6 +13,6 @@ Ada gajah- ada gua lah Yud, apalagi?#speaker:Baskara #portrait:baskara #layout:l
 Cuma gua aja? Bosenin banget mau ngapain kesana…#speaker:Yuda #portrait:yuda #layout:left
 Yaelah yud, sekali-kali deh, mumpung kamu disini juga, masa orang Cirebon ga pernah kesana sama sekali.#speaker:Gita #portrait:gita #layout:right
 Iya yud, kapan lagi, mumpung libur.#speaker:Baskara #portrait:baskara #layout:left
-Ok fine….
-Setelah lama berdiskusi dan berargumen, kalian sepakat untuk mengunjungi gua sunyaragi. Walaupun kalian bertiga lahir dan besar di Cirebon, kalian belum pernah berkunjung kesana. Maka dari itu, kalian menggunakan kesempatan ini untuk berkunjung.
+Ok fine….#speaker:Yuda #portrait:yuda #layout:left
+Setelah lama berdiskusi dan berargumen, kalian sepakat untuk mengunjungi gua sunyaragi. Walaupun kalian bertiga lahir dan besar di Cirebon, kalian belum pernah berkunjung kesana. Maka dari itu, kalian menggunakan kesempatan ini untuk berkunjung.#speaker:Narrator #portrait:"" #layout:right
 -> END
