@@ -319,6 +319,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.4
+  patrolPoints:
+  - {fileID: 182364191}
+  - {fileID: 1569223590}
+  guidePoints:
+  - {fileID: 191255652}
+  - {fileID: 1062742863}
+  - {fileID: 1678712291}
 --- !u!1001 &83020585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7012,6 +7019,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1301095176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &191255651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 191255652}
+  m_Layer: 0
+  m_Name: Point TARGET (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &191255652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191255651}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.4, y: -3.1499999, z: -0.048604652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199692362
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,6 +8321,10 @@ PrefabInstance:
       value: MapTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
+      propertyPath: mapName
+      value: GameplayTest 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: a95a68387be33d749a8f237d99b59afc, type: 2}
@@ -8730,7 +8772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &569024375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11670,6 +11712,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.827065, y: 1.5238123}
   m_EdgeRadius: 0
+--- !u!1 &1062742862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062742863}
+  m_Layer: 0
+  m_Name: Point TARGET (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1062742863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062742862}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03, y: -4.06, z: -0.048604652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153423154
 GameObject:
   m_ObjectHideFlags: 0
@@ -12531,7 +12604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1349173277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12812,6 +12885,15 @@ MonoBehaviour:
       isCompleted: 0
     - objectiveName: Ambil Kunci
       isCompleted: 0
+  - questID: 0
+    questName: Cari Item B
+    objectives:
+    - objectiveName: cari item B
+      isCompleted: 0
+    - objectiveName: Ngobrol NPC B
+      isCompleted: 0
+    - objectiveName: Ambil Kunci B
+      isCompleted: 0
 --- !u!1001 &1560679339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12992,6 +13074,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1301095176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1678712290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678712291}
+  m_Layer: 0
+  m_Name: Point TARGET
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678712291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678712290}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.56, y: -3.1499999, z: -0.048604652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705453265
 GameObject:
   m_ObjectHideFlags: 0
@@ -13083,10 +13196,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 99331898}
-  inkJSON: {fileID: 4900000, guid: fad5019e17d75554a91ea2f96c8d1859, type: 3}
+  inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
   questID: 0
   objectiveIndex: 1
   completeObjectiveAfterDialogue: 1
+  startGuideAfterDialogue: 1
+  npcMovement: {fileID: 82645438}
 --- !u!1 &1788895328
 GameObject:
   m_ObjectHideFlags: 0
@@ -15109,6 +15224,9 @@ SceneRoots:
   - {fileID: 1963057819}
   - {fileID: 1366144582}
   - {fileID: 1301095176}
+  - {fileID: 1678712291}
+  - {fileID: 1062742863}
+  - {fileID: 191255652}
   - {fileID: 793709020}
   - {fileID: 423368481}
   - {fileID: 4435838520593547195}

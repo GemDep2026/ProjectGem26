@@ -19,15 +19,15 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        StartFirstQuest();
-    }
+    // private void Start()
+    // {
+    //     StartFirstQuest();
+    // }
 
-    void StartFirstQuest()
-    {
+    // void StartFirstQuest()
+    // {
         
-    }
+    // }
 
     public void CompleteObjective(int questID, int objectiveIndex)
     {
@@ -50,7 +50,7 @@ public class QuestManager : MonoBehaviour
             else
             {
                 Debug.Log("All Quest Finished!");
-                SceneManager.LoadScene("Scene2");
+                // SceneManager.LoadScene("Scene2");
             }
         }
     }

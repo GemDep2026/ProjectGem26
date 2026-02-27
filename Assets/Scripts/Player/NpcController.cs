@@ -4,64 +4,124 @@ using UnityEngine;
 
 public class NpcMovement : MonoBehaviour
 {
+    private enum NPCState
+    {
+        Patrol,
+        Guide,
+        IdleAtTarget
+    }
+
+    private NPCState currentState = NPCState.Patrol;
+
     public float moveSpeed = 2.0f;
-    private Animator animator;
-    private Transform[] patrolPoints;
+    [Header("Patrol Points")]
+    public Transform[] patrolPoints;
     private int currentPatrolIndex = 0;
 
+    [Header("Guide Points")]
+    public Transform[] guidePoints;
+    private int currentGuideIndex = 0;
+
+    private Animator animator;
     private Vector2 lastMoveDirection = Vector2.down; // Default direction
 
-    void Start()
+        void Start()
     {
         animator = GetComponent<Animator>();
-        FindPatrolPoints();
     }
 
     void Update()
     {
-        if (!DialogueManager.GetInstance().DialogueIsPlaying)
+        if (DialogueManager.GetInstance() != null &&
+            DialogueManager.GetInstance().DialogueIsPlaying)
         {
-            Patrol();
-            UpdateAnimator();
+            animator.SetBool("isWalking", false);
+            return;
         }
-        else
+
+        switch (currentState)
         {
-            // If a dialogue is playing, set the NPC to idle
-            animator.SetFloat("Horizontal", 0);
-            animator.SetFloat("Vertical", 0);
+            case NPCState.Patrol:
+                Patrol();
+                break;
+
+            case NPCState.Guide:
+                GuideMove();
+                break;
+
+            case NPCState.IdleAtTarget:
+                animator.SetBool("isWalking", false);
+                break;
         }
-    }
 
-    void FindPatrolPoints()
-    {
-        // Find all GameObjects with the "PatrolPoint" tag
-        GameObject[] patrolPointObjects = GameObject.FindGameObjectsWithTag("PatrolPoint");
-
-        // Initialize the array with the length of the found objects
-        patrolPoints = new Transform[patrolPointObjects.Length];
-
-        // Assign the positions of the found objects to the patrolPoints array
-        for (int i = 0; i < patrolPointObjects.Length; i++)
-        {
-            patrolPoints[i] = patrolPointObjects[i].transform;
-        }
+        UpdateAnimator();
     }
 
     void Patrol()
     {
-        Vector2 targetPosition = patrolPoints[currentPatrolIndex].position;
+        if (patrolPoints == null || patrolPoints.Length == 0)
+            return;
 
-        // move to the next patrol point
-        if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
+        MoveToTarget(patrolPoints[currentPatrolIndex].position);
+
+        if (Vector2.Distance(transform.position, patrolPoints[currentPatrolIndex].position) < 0.1f)
         {
             currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
         }
+    }
 
-        Vector2 moveDirection = (targetPosition - (Vector2)transform.position).normalized;
+    void GuideMove()
+    {
+        if (guidePoints == null || guidePoints.Length == 0)
+            return;
+
+        MoveToTarget(guidePoints[currentGuideIndex].position);
+
+        if (Vector2.Distance(transform.position, guidePoints[currentGuideIndex].position) < 0.1f)
+        {
+            currentGuideIndex++;
+
+            if (currentGuideIndex >= guidePoints.Length)
+            {
+                currentState = NPCState.IdleAtTarget;
+                animator.SetBool("isWalking", false);
+            }
+        }
+    }
+
+    void MoveToTarget(Vector2 targetPos)
+    {
+        Vector2 currentPos = transform.position;
+
+        float xDiff = targetPos.x - currentPos.x;
+        float yDiff = targetPos.y - currentPos.y;
+
+        Vector2 moveDirection = Vector2.zero;
+
+        // Prioritas selesaikan X dulu
+        if (Mathf.Abs(xDiff) > 0.05f)
+        {
+            moveDirection = new Vector2(Mathf.Sign(xDiff), 0);
+        }
+        else if (Mathf.Abs(yDiff) > 0.05f)
+        {
+            moveDirection = new Vector2(0, Mathf.Sign(yDiff));
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+            return;
+        }
+
         transform.Translate(moveSpeed * Time.deltaTime * moveDirection);
 
-        // Store the last movement direction
         lastMoveDirection = moveDirection;
+
+        animator.SetFloat("Horizontal", moveDirection.x);
+        animator.SetFloat("Vertical", moveDirection.y);
+        animator.SetFloat("LastMoveHorizontal", moveDirection.x);
+        animator.SetFloat("LastMoveVertical", moveDirection.y);
+        animator.SetBool("isWalking", true);
     }
 
     void UpdateAnimator()
@@ -69,4 +129,17 @@ public class NpcMovement : MonoBehaviour
         animator.SetFloat("Horizontal", lastMoveDirection.x);
         animator.SetFloat("Vertical", lastMoveDirection.y);
     }
+
+    public void StartGuide()
+    {
+        currentGuideIndex = 0;
+        currentState = NPCState.Guide;
+    }
+
+    public void ResumePatrol()
+    {
+        currentState = NPCState.Patrol;
+    }
+
+
 }

@@ -15,6 +15,11 @@ public class DialogueTrigger : MonoBehaviour
     public int objectiveIndex = -1;
     public bool completeObjectiveAfterDialogue = false;
 
+    [Header("Guide NPC")]
+    public bool startGuideAfterDialogue = false;
+    public NpcMovement npcMovement;
+    // public PlayerController player;
+
     private bool dialogueWasPlaying = false;
 
     private bool playerInRange;
@@ -44,10 +49,19 @@ public class DialogueTrigger : MonoBehaviour
 
         if (dialogueWasPlaying && !isPlaying)
         {
-            // Dialogue baru saja selesai
+            // Complete Quest
             if (completeObjectiveAfterDialogue && questID != -1)
             {
                 QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
+            }
+
+            // Start Guide
+            if (startGuideAfterDialogue && npcMovement != null)
+            {
+                npcMovement.StartGuide();
+
+                // if (player != null)
+                //     player.FollowNPC(npcMovement.transform);
             }
         }
 
