@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedffaed5e480b8468e365a43e12f98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: 8f853a6be953f1b4d812b9942d3195c9, type: 3}
+  inkJSON: {fileID: 4900000, guid: 0940d42499d1be64e95a981f920150c1, type: 3}
   dialogueText: {fileID: 1600740242}
   dialoguePanel: {fileID: 1047743326}
   typingSpeed: 0.04

@@ -1,12 +1,16 @@
 -> main
 
 === main ===
-Haloo, apakah kalian punya ide kita mau kemana?#speaker:Gita #portrait:gita #layout:right
-Entahlah, di Cirebon gak banyak yang bisa dikunjungi bukan? Ngemall pun sudah bosan.#speaker:Baskara #portrait:baskara #layout:left
+Sudah sekian lama sejak terakhir kali kalian bertemu. Terhitung sudah empat tahun lamanya. Dulunya, kalian adalah tiga sekawan yang tak terpisahkan, tinggal berdekatan dan satu kelas. Kalian selalu bermain bersama dan belajar bersama.#speaker:Narrative
+Semenjak Yuda, pindah sekolah ke kota besar saat kelas 2 SMP karena ikut ayahnya, kalian terpaksa berpisah. Semenjak itu, kalian hanya berkomunikasi via chat, itupun tidak intens.#speaker:Narrative
+Hingga beberapa hari yang lalu, Yuda memberi kabar bahwa ia berencana pulang ke Cirebon untuk beberapa hari untuk berlibur. Kini, kamu bersemangat untuk kembali bertemu dengan sahabat lamamu.#speaker:Narrative
+Kini, kalian sedang berdiskusi untuk merencanakan tempat yang akan dikunjungi.#speaker:Narrative
+Haloo, apakah kalian punya ide kita mau kemana?#speaker:Gita #portrait:gita_default #layout:right
+Entahlah, di Cirebon gak banyak yang bisa dikunjungi bukan? Ngemall pun sudah bosan.#speaker:Baskara #portrait:baskara_default #layout:left
 Iya,,, kalau begitu jangan ke mall.#speaker:Yuda #portrait:yuda #layout:left
 Pft, mau ke keraton kah? Sudah lama tidak ke sana.#speaker:Baskara #portrait:baskara #layout:left
 Ngebosenin banget-#speaker:Yuda #portrait:yuda #layout:left
-Ah, waktu kecil kan udah berkali-kali kesana#speaker:Gita #portrait:gita #layout:right
+Ah, waktu kecil kan udah berkali-kali kesana#speaker:Gita #portrait:gita_oops1 #layout:right
 Gimana kalau ke Gua Sunyaragi aja. Kita belum pernah kesana sama sekali kan? Masa orang Cirebon ga pernah kesana.#speaker:Gita #portrait:gita #layout:right
 Hah, emangnya ada apa di Gua Sunyaragi#speaker:Yuda #portrait:yuda #layout:left
 Ada gajah- ada gua lah Yud, apalagi?#speaker:Baskara #portrait:baskara #layout:left
