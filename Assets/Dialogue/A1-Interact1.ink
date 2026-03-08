@@ -1,1 +1,3 @@
-﻿
+“Sunyaragi, berasal dari kata “Sunyi” dan “Raga”. Raga yang berarti jiwa, Sunyi yang berarti tenang. Sunyaragi merupakan tempat untuk mensunyikan raga atau meditasi bagi keluarga Sultan.” #speaker:Tour Guide #portrait:tourguide_default #layout:left
+“Gua Sunyaragi dibangun dari tahun 1595-1786 oleh keturunan Sunan Gunung Jati. Gua Sunyaragi merupakan situs bangun bersejarah yang menarik karena terbuat dari atras (pasir dari gunung yg mengandung semen), batu-batu karang yg berasal dari yogyakarta dan dilekatkan menggunakan putih telur."#speaker:Tour Guide #portrait:tourguide_default #layout:left
+"Namun hal ini merupakan makna kiasan saja, yang putih artinya menyucikan niat/diri dan telur bermakna tekad yang bulat.”#speaker:Tour Guide #portrait:tourguide_default #layout:left
