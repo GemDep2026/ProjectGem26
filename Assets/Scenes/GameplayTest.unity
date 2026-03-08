@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 82645434}
   - component: {fileID: 82645438}
   m_Layer: 0
-  m_Name: Grandma
+  m_Name: Tourguide
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.12, y: 0.64, z: 0}
-  m_LocalScale: {x: 0.5163562, y: 0.5625588, z: 0.9421403}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 99331899}
@@ -214,18 +214,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06838751, y: -1.1440754}
+  m_Offset: {x: -0.079575956, y: -3.0461726}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
+    oldSize: {x: 11.63, y: 10.98}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8285923, y: 0.21869469}
+  m_Size: {x: 1.9250957, y: 0.6214924}
   m_EdgeRadius: 0
 --- !u!50 &82645436
 Rigidbody2D:
@@ -295,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: -786199541
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a65426fa138f1874eb5588bb585e38d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 930dfea4caa4f784c9fe0882c3052000, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -326,6 +326,9 @@ MonoBehaviour:
   - {fileID: 191255652}
   - {fileID: 1062742863}
   - {fileID: 1678712291}
+  startingGuideStep: 1
+  player: {fileID: 753232552604299496}
+  waitDistance: 3
 --- !u!1001 &83020585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6807,8 +6810,8 @@ Transform:
   m_GameObject: {fileID: 99331898}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.058099356, y: 1.4576254, z: 0}
-  m_LocalScale: {x: 0.2096434, y: 0.2096434, z: 0}
+  m_LocalPosition: {x: 0, y: 5.616, z: 0}
+  m_LocalScale: {x: 0.62389874, y: 0.62389874, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 82645432}
@@ -6968,12 +6971,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165604369}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 996.2068, y: 584.40607, z: 4.9558535}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: -49983.938, y: -29319.703, z: 247.79268}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 775657253}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &165604371
 MonoBehaviour:
@@ -9641,7 +9644,8 @@ Transform:
   m_LocalPosition: {x: -3.472, y: -1.988, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 165604370}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!1 &787912187
@@ -12564,7 +12568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301095176}
   m_Layer: 0
-  m_Name: GrandmaPoint
+  m_Name: TourguidePointIdle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12699,7 +12703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1366144582
 Transform:
   m_ObjectHideFlags: 0
@@ -13170,7 +13174,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08411497, y: 0.563377}
+  m_Offset: {x: 0.026340723, y: 0.5759659}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13181,7 +13185,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.79247844, y: 1.6306264}
+  m_Size: {x: 2.7799082, y: 4.651921}
   m_EdgeRadius: 0
 --- !u!114 &1705453268
 MonoBehaviour:
@@ -13197,11 +13201,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 99331898}
   inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  guideDialogues:
+  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: 99f8747dc2d7e0c4fb75c069de79885e, type: 3}
+  guideTargetSteps: 0000000002000000
   questID: 0
   objectiveIndex: 1
   completeObjectiveAfterDialogue: 1
   startGuideAfterDialogue: 1
   npcMovement: {fileID: 82645438}
+  nextGuideAfterDialogue: 1
 --- !u!1 &1788895328
 GameObject:
   m_ObjectHideFlags: 0
@@ -13475,6 +13484,7 @@ GameObject:
   - component: {fileID: 1947014820}
   - component: {fileID: 1947014819}
   - component: {fileID: 1947014818}
+  - component: {fileID: 1947014822}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13572,6 +13582,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1947014822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947014817}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0068101883, y: 0.013620853}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.949038, y: 5.603919}
+  m_EdgeRadius: 0
 --- !u!1 &1954855633
 GameObject:
   m_ObjectHideFlags: 0
@@ -15233,5 +15288,4 @@ SceneRoots:
   - {fileID: 569024377}
   - {fileID: 1349173279}
   - {fileID: 775657253}
-  - {fileID: 165604370}
   - {fileID: 1449502570}

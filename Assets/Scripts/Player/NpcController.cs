@@ -20,14 +20,21 @@ public class NpcMovement : MonoBehaviour
 
     [Header("Guide Points")]
     public Transform[] guidePoints;
-    private int currentGuideIndex = 0;
+    private int guideStep = 0;
+    private int targetGuideStep = 0;
+    [SerializeField] private int startingGuideStep = 0;
+
+    [Header("Guide Follow Settings")]
+    public Transform player;
+    public float waitDistance = 3f;
 
     private Animator animator;
     private Vector2 lastMoveDirection = Vector2.down; // Default direction
 
-        void Start()
+    void Start()
     {
         animator = GetComponent<Animator>();
+        guideStep = startingGuideStep;
     }
 
     void Update()
@@ -72,21 +79,46 @@ public class NpcMovement : MonoBehaviour
 
     void GuideMove()
     {
+
         if (guidePoints == null || guidePoints.Length == 0)
             return;
+        
+        float playerDistance = Vector2.Distance(transform.position, player.position);
 
-        MoveToTarget(guidePoints[currentGuideIndex].position);
-
-        if (Vector2.Distance(transform.position, guidePoints[currentGuideIndex].position) < 0.1f)
+        if (playerDistance > waitDistance)
         {
-            currentGuideIndex++;
+            // Player terlalu jauh → NPC berhenti
+            animator.SetBool("isWalking", false);
+            return;
+        }
 
-            if (currentGuideIndex >= guidePoints.Length)
+        MoveToTarget(guidePoints[guideStep].position);
+
+        if (Vector2.Distance(transform.position, guidePoints[guideStep].position) < 0.1f)
+        {
+            if (guideStep < targetGuideStep)
+            {
+                guideStep++;
+            }
+            else
             {
                 currentState = NPCState.IdleAtTarget;
                 animator.SetBool("isWalking", false);
             }
         }
+
+        // MoveToTarget(guidePoints[currentGuideIndex].position);
+
+        // if (Vector2.Distance(transform.position, guidePoints[currentGuideIndex].position) < 0.1f)
+        // {
+        //     currentGuideIndex++;
+
+        //     if (currentGuideIndex >= guidePoints.Length)
+        //     {
+        //         currentState = NPCState.IdleAtTarget;
+        //         animator.SetBool("isWalking", false);
+        //     }
+        // }
     }
 
     void MoveToTarget(Vector2 targetPos)
@@ -130,10 +162,14 @@ public class NpcMovement : MonoBehaviour
         animator.SetFloat("Vertical", lastMoveDirection.y);
     }
 
-    public void StartGuide()
+    public void StartGuide(int step)
     {
-        currentGuideIndex = 0;
+        guideStep = 0;
+        targetGuideStep = Mathf.Clamp(step, 0, guidePoints.Length - 1);
         currentState = NPCState.Guide;
+
+        // currentGuideIndex = 0;
+        // currentState = NPCState.Guide;
     }
 
     public void ResumePatrol()
@@ -141,5 +177,18 @@ public class NpcMovement : MonoBehaviour
         currentState = NPCState.Patrol;
     }
 
+    public void NextGuide()
+    {
+        guideStep++;
 
+        if (guideStep < guidePoints.Length)
+        {
+            currentState = NPCState.Guide;
+        }
+    }
+
+    public int GetCurrentGuideStep()
+    {
+        return guideStep;
+    }
 }

@@ -10,6 +10,12 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    [Header("Guide Dialogues")]
+    public TextAsset[] guideDialogues;
+
+    [Header("Guide Target Step")]
+    public int[] guideTargetSteps;
+
     [Header("Quest")]
     public int questID = -1;
     public int objectiveIndex = -1;
@@ -20,7 +26,11 @@ public class DialogueTrigger : MonoBehaviour
     public NpcMovement npcMovement;
     // public PlayerController player;
 
+    [Header("Guide Step")]
+    public bool nextGuideAfterDialogue = false;
+
     private bool dialogueWasPlaying = false;
+    private int dialogueIndex = 0;
 
     private bool playerInRange;
 
@@ -37,7 +47,15 @@ public class DialogueTrigger : MonoBehaviour
             visualCue.SetActive(true);
             if (InputManager.GetInstance().GetDialoguePressed())
             {
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                if (npcMovement != null && guideDialogues.Length > 0)
+                {
+                    dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
+                    DialogueManager.GetInstance().EnterDialogueMode(guideDialogues[dialogueIndex]);
+                }
+                else
+                {
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                }
             }
         }
         else
@@ -55,14 +73,23 @@ public class DialogueTrigger : MonoBehaviour
                 QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
             }
 
-            // Start Guide
             if (startGuideAfterDialogue && npcMovement != null)
             {
-                npcMovement.StartGuide();
-
-                // if (player != null)
-                //     player.FollowNPC(npcMovement.transform);
+                npcMovement.StartGuide(1);
             }
+
+            // Guide berikutnya
+            if (nextGuideAfterDialogue && npcMovement != null)
+            {
+                npcMovement.NextGuide();
+            }
+
+            if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
+            {
+                npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
+            }
+
+            dialogueIndex++;
         }
 
         dialogueWasPlaying = isPlaying;
