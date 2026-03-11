@@ -11911,7 +11911,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 99331898}
+<<<<<<< HEAD
   inkJSON: {fileID: 4900000, guid: 0940d42499d1be64e95a981f920150c1, type: 3}
+=======
+  inkJSON: {fileID: 4900000, guid: fad5019e17d75554a91ea2f96c8d1859, type: 3}
+  questID: -1
+  objectiveIndex: -1
+  completeObjectiveAfterDialogue: 0
+>>>>>>> Dev
 --- !u!1 &1788895328
 GameObject:
   m_ObjectHideFlags: 0
@@ -12953,10 +12960,13 @@ PrefabInstance:
     - target: {fileID: 3448013420411516780, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_IsActive
       value: 1
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Type
       value: 1
+=======
+>>>>>>> Dev
       objectReference: {fileID: 0}
     - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Sprite
