@@ -9,6 +9,8 @@ public class Interaction : MonoBehaviour
     public string puzzleScene;
 
     public int itemId;
+    public int questID;
+    public int objectiveIndex;
 
     private Vector2 playerPos;
 
@@ -52,16 +54,20 @@ public class Interaction : MonoBehaviour
     public virtual void OnInteract()
     {
         interactUI.SetActive(false);
+        QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
         ItemDatabase.instance.SavePlayerPosition(playerPos);
         ItemDatabase.instance.AddItemToList(itemId);
-        SceneManager.LoadScene(puzzleScene);
-    }
-
-    private void Start()
-    {
-        if (ItemDatabase.instance.itemListDestroy.Contains(itemId))
+        if (!string.IsNullOrEmpty(puzzleScene))
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(puzzleScene);
         }
     }
+
+    // private void Start()
+    // {
+    //     if (ItemDatabase.instance.itemListDestroy.Contains(itemId))
+    //     {
+    //         Destroy(gameObject);
+    //     }
+    // }
 }

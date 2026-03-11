@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
+    public static List<Vector3> positionHistory = new List<Vector3>();
+    public int maxHistory = 100;
+
     private AudioManager audioManager;  // Reference to the AudioManager
 
     Vector2 movement;
@@ -16,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private bool isWalking = false;  // Flag to track whether the player is walking
 
     public VectorValue startingPosition;
+
+    public bool IsWalking => isWalking;
 
     private void Start()
     {
@@ -35,15 +40,27 @@ public class PlayerController : MonoBehaviour
 
     public void SetMovement(Vector2 inputMovement)
     {
-        movement = inputMovement;
+        if (Mathf.Abs(inputMovement.x) > Mathf.Abs(inputMovement.y))
+        {
+            movement = new Vector2(Mathf.Sign(inputMovement.x), 0);
+        }
+        else if (Mathf.Abs(inputMovement.y) > 0)
+        {
+            movement = new Vector2(0, Mathf.Sign(inputMovement.y));
+        }
+        else
+        {
+            movement = Vector2.zero;
+        }
+
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (inputMovement.x == 1 || inputMovement.x == -1 || inputMovement.y == 1 || inputMovement.y == -1)
+        if (movement != Vector2.zero)
         {
-            animator.SetFloat("LastMoveHorizontal", inputMovement.x);
-            animator.SetFloat("LastMoveVertical", inputMovement.y);
+            animator.SetFloat("LastMoveHorizontal", movement.x);
+            animator.SetFloat("LastMoveVertical", movement.y);
         }
     }
 
@@ -75,6 +92,15 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    void LateUpdate()
+    {
+        positionHistory.Insert(0, transform.position);
+
+        if (positionHistory.Count > maxHistory)
+            positionHistory.RemoveAt(positionHistory.Count - 1);
+    }
+
 
     void FixedUpdate()
     {
