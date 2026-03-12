@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -26,8 +26,16 @@ public class dialogue : MonoBehaviour
     private bool isTyping = false;
     private bool isLineFinished = false;
 
+    private GameObject player;
+
     void Start()
     {
+        // Cari player berdasarkan tag
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        // Matikan movement player saat dialog dimulai
+        SetPlayerMovement(false);
+
         story = new Story(inkJSON.text);
         dialoguePanel.SetActive(true);
         DisplayNextLine();
@@ -61,6 +69,9 @@ public class dialogue : MonoBehaviour
         }
         else
         {
+            // Dialog selesai → player boleh bergerak lagi
+            SetPlayerMovement(true);
+
             StartCoroutine(LoadNextScene());
         }
     }
@@ -111,7 +122,33 @@ public class dialogue : MonoBehaviour
     IEnumerator LoadNextScene()
     {
         dialoguePanel.SetActive(false);
+        dialogueText.gameObject.SetActive(false);
+
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(nextSceneName);
+
+        if (Application.CanStreamedLevelBeLoaded(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.LogWarning("Scene tidak ditemukan: " + nextSceneName);
+        }
+    }
+
+    void SetPlayerMovement(bool state)
+    {
+        if (player == null) return;
+
+        // Nonaktifkan semua script movement di player
+        MonoBehaviour[] scripts = player.GetComponents<MonoBehaviour>();
+
+        foreach (MonoBehaviour script in scripts)
+        {
+            if (script != this)
+            {
+                script.enabled = state;
+            }
+        }
     }
 }
