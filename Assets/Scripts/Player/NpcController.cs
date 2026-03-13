@@ -164,12 +164,13 @@ public class NpcMovement : MonoBehaviour
 
     public void StartGuide(int step)
     {
-        guideStep = 0;
         targetGuideStep = Mathf.Clamp(step, 0, guidePoints.Length - 1);
-        currentState = NPCState.Guide;
 
-        // currentGuideIndex = 0;
-        // currentState = NPCState.Guide;
+        // kalau target lebih kecil dari posisi sekarang, abaikan
+        if (targetGuideStep <= guideStep)
+            return;
+
+        currentState = NPCState.Guide;
     }
 
     public void ResumePatrol()
@@ -190,5 +191,15 @@ public class NpcMovement : MonoBehaviour
     public int GetCurrentGuideStep()
     {
         return guideStep;
+    }
+
+    public bool IsGuiding()
+    {
+        return currentState == NPCState.Guide;
+    }
+
+    public bool IsMoving()
+    {
+        return currentState == NPCState.Guide || currentState == NPCState.Patrol;
     }
 }

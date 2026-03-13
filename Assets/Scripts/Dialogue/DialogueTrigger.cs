@@ -39,62 +39,108 @@ public class DialogueTrigger : MonoBehaviour
         playerInRange = false;
         visualCue.SetActive(false);
     }
+    void Update()
+{
+    DialogueManager dialogueManager = DialogueManager.GetInstance();
+    if (dialogueManager == null) return;
 
-    private void Update()
+    if (playerInRange && !dialogueManager.DialogueIsPlaying)
     {
-        if (playerInRange && !DialogueManager.GetInstance().DialogueIsPlaying)
-        {
-            visualCue.SetActive(true);
-            if (InputManager.GetInstance().GetDialoguePressed())
-            {
-                if (npcMovement != null && guideDialogues.Length > 0)
-                {
-                    dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
-                    DialogueManager.GetInstance().EnterDialogueMode(guideDialogues[dialogueIndex]);
-                }
-                else
-                {
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                }
-            }
-        }
-        else
+        if (npcMovement != null && npcMovement.IsGuiding())
         {
             visualCue.SetActive(false);
+            return;
         }
 
-        bool isPlaying = DialogueManager.GetInstance().DialogueIsPlaying;
+        visualCue.SetActive(true);
 
-        if (dialogueWasPlaying && !isPlaying)
+        if (InputManager.GetInstance().GetDialoguePressed())
         {
-            // Complete Quest
-            if (completeObjectiveAfterDialogue && questID != -1)
-            {
-                QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
-            }
+            if (npcMovement != null && npcMovement.IsGuiding())
+                return;
 
-            if (startGuideAfterDialogue && npcMovement != null)
+            if (npcMovement != null && guideDialogues.Length > 0)
             {
-                npcMovement.StartGuide(1);
+                dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
+                dialogueManager.EnterDialogueMode(guideDialogues[dialogueIndex]);
             }
-
-            // Guide berikutnya
-            if (nextGuideAfterDialogue && npcMovement != null)
+            else
             {
-                npcMovement.NextGuide();
+                dialogueManager.EnterDialogueMode(inkJSON);
             }
-
-            if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
-            {
-                npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
-            }
-
-            dialogueIndex++;
         }
-
-        dialogueWasPlaying = isPlaying;
+    }
+    else
+    {
+        visualCue.SetActive(false);
     }
 
+    bool isPlaying = dialogueManager.DialogueIsPlaying;
+
+    if (dialogueWasPlaying && !isPlaying)
+    {
+        if (completeObjectiveAfterDialogue && questID != -1)
+        {
+            QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
+        }
+
+        if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
+        {
+            npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
+        }
+
+        dialogueIndex = Mathf.Min(dialogueIndex + 1, guideTargetSteps.Length - 1);
+    }
+
+    dialogueWasPlaying = isPlaying;
+}
+
+    // private void Update()
+    // {
+    //     if (playerInRange && !DialogueManager.GetInstance().DialogueIsPlaying)
+    //     {
+    //         visualCue.SetActive(true);
+    //         if (InputManager.GetInstance().GetDialoguePressed())
+    //         {
+    //             if (npcMovement != null && guideDialogues.Length > 0)
+    //             {
+    //                 dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
+    //                 DialogueManager.GetInstance().EnterDialogueMode(guideDialogues[dialogueIndex]);
+    //             }
+    //             else
+    //             {
+    //                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+    //             }
+    //         }
+    //     }
+    //     else
+    //     {
+    //         visualCue.SetActive(false);
+    //     }
+
+    //     bool isPlaying = DialogueManager.GetInstance().DialogueIsPlaying;
+
+    //     if (dialogueWasPlaying && !isPlaying)
+    //     {
+    //         // Complete Quest
+    //         if (completeObjectiveAfterDialogue && questID != -1)
+    //         {
+    //             QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
+    //         }
+
+    //         if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
+    //         {
+    //             npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
+    //         }
+
+    //         dialogueIndex = Mathf.Min(dialogueIndex + 1, guideDialogues.Length - 1);
+    //     }
+
+    //     dialogueWasPlaying = isPlaying;
+    // }
+
+
+    
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Player"))
