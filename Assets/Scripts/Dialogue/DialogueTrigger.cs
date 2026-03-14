@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Quest")]
     public int questID = -1;
-    public int objectiveIndex = -1;
+    public int[] objectiveIndex;
     public bool completeObjectiveAfterDialogue = false;
 
     [Header("Guide NPC")]
@@ -28,6 +29,9 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Guide Step")]
     public bool nextGuideAfterDialogue = false;
+
+    [Header("Scene After Dialogue")]
+    public string[] sceneAfterDialogue;
 
     private bool dialogueWasPlaying = false;
     private int dialogueIndex = 0;
@@ -40,107 +44,75 @@ public class DialogueTrigger : MonoBehaviour
         visualCue.SetActive(false);
     }
     void Update()
-{
-    DialogueManager dialogueManager = DialogueManager.GetInstance();
-    if (dialogueManager == null) return;
-
-    if (playerInRange && !dialogueManager.DialogueIsPlaying)
     {
-        if (npcMovement != null && npcMovement.IsGuiding())
-        {
-            visualCue.SetActive(false);
-            return;
-        }
+        DialogueManager dialogueManager = DialogueManager.GetInstance();
+        if (dialogueManager == null) return;
 
-        visualCue.SetActive(true);
-
-        if (InputManager.GetInstance().GetDialoguePressed())
+        if (playerInRange && !dialogueManager.DialogueIsPlaying)
         {
             if (npcMovement != null && npcMovement.IsGuiding())
+            {
+                visualCue.SetActive(false);
                 return;
-
-            if (npcMovement != null && guideDialogues.Length > 0)
-            {
-                dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
-                dialogueManager.EnterDialogueMode(guideDialogues[dialogueIndex]);
             }
-            else
+
+            visualCue.SetActive(true);
+
+            if (InputManager.GetInstance().GetDialoguePressed())
             {
-                dialogueManager.EnterDialogueMode(inkJSON);
+                if (npcMovement != null && npcMovement.IsGuiding())
+                    return;
+
+                if (npcMovement != null && guideDialogues.Length > 0)
+                {
+                    dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
+                    dialogueManager.EnterDialogueMode(guideDialogues[dialogueIndex]);
+                }
+                else
+                {
+                    dialogueManager.EnterDialogueMode(inkJSON);
+                }
             }
         }
-    }
-    else
-    {
-        visualCue.SetActive(false);
-    }
-
-    bool isPlaying = dialogueManager.DialogueIsPlaying;
-
-    if (dialogueWasPlaying && !isPlaying)
-    {
-        if (completeObjectiveAfterDialogue && questID != -1)
+        else
         {
-            QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
+            visualCue.SetActive(false);
         }
 
-        if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
+        bool isPlaying = dialogueManager.DialogueIsPlaying;
+
+        if (dialogueWasPlaying && !isPlaying)
         {
-            npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
+            if (completeObjectiveAfterDialogue && questID != -1)
+            {
+                if (objectiveIndex.Length > dialogueIndex)
+                {
+                    QuestManager.Instance.CompleteObjective(questID, objectiveIndex[dialogueIndex]);
+                }
+            }
+
+            if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
+            {
+                npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
+            }
+
+            if (sceneAfterDialogue.Length > dialogueIndex)
+            {
+                string sceneName = sceneAfterDialogue[dialogueIndex];
+
+                if (!string.IsNullOrEmpty(sceneName))
+                {
+                    SceneManager.LoadScene(sceneName);
+                    return;
+                }
+            }
+
+            dialogueIndex = Mathf.Min(dialogueIndex + 1, guideTargetSteps.Length - 1);
         }
 
-        dialogueIndex = Mathf.Min(dialogueIndex + 1, guideTargetSteps.Length - 1);
-    }
+        dialogueWasPlaying = isPlaying;
+    }    
 
-    dialogueWasPlaying = isPlaying;
-}
-
-    // private void Update()
-    // {
-    //     if (playerInRange && !DialogueManager.GetInstance().DialogueIsPlaying)
-    //     {
-    //         visualCue.SetActive(true);
-    //         if (InputManager.GetInstance().GetDialoguePressed())
-    //         {
-    //             if (npcMovement != null && guideDialogues.Length > 0)
-    //             {
-    //                 dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
-    //                 DialogueManager.GetInstance().EnterDialogueMode(guideDialogues[dialogueIndex]);
-    //             }
-    //             else
-    //             {
-    //                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-    //             }
-    //         }
-    //     }
-    //     else
-    //     {
-    //         visualCue.SetActive(false);
-    //     }
-
-    //     bool isPlaying = DialogueManager.GetInstance().DialogueIsPlaying;
-
-    //     if (dialogueWasPlaying && !isPlaying)
-    //     {
-    //         // Complete Quest
-    //         if (completeObjectiveAfterDialogue && questID != -1)
-    //         {
-    //             QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
-    //         }
-
-    //         if (npcMovement != null && guideTargetSteps.Length > dialogueIndex)
-    //         {
-    //             npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
-    //         }
-
-    //         dialogueIndex = Mathf.Min(dialogueIndex + 1, guideDialogues.Length - 1);
-    //     }
-
-    //     dialogueWasPlaying = isPlaying;
-    // }
-
-
-    
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Player"))

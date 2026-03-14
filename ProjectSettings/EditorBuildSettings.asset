@@ -8,22 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 0045cd909d6cb9e4ab7f4fd46b96eb77
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/IntroCutscene.unity
     guid: a495142ddc3b68e4eac827a6b5726907
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseMc.unity
     guid: f9e6c3036cae2f349971f2b484a6c149
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MapMain.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseHeadVillage.unity
     guid: 309b07c11a55f924784d4a95c1763c43
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseHeadCutscene.unity
     guid: e758eb90b529d8c47812364921a16801
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseClinic.unity
     guid: 28ee25e36a47fc54c9d8c4ec52f3122f
   - enabled: 1
@@ -35,13 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle_Lvl3.unity
     guid: 919d954e04451ca4bbdf59d589552729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseMcFinal.unity
     guid: 68ce52d5151bdcb4baea6a09b94a1b93
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseClinicFinal.unity
     guid: 4a8f97c0312a01f49aacfe6a2c67cf32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EndingCutscene.unity
     guid: a1d17d957f4ee4445ab27f9e03c8f07b
   - enabled: 1
