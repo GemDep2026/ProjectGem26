@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 402982800342435065}
   - component: {fileID: 5102807489393047130}
   m_Layer: 5
-  m_Name: dialogue parts
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -121,17 +121,17 @@ public class dialogue : MonoBehaviour
 
     IEnumerator LoadNextScene()
     {
-        dialoguePanel.SetActive(false);
-        dialogueText.gameObject.SetActive(false);
-
         yield return new WaitForSeconds(0.5f);
 
-        if (Application.CanStreamedLevelBeLoaded(nextSceneName))
+        if (!string.IsNullOrEmpty(nextSceneName) && Application.CanStreamedLevelBeLoaded(nextSceneName))
         {
             SceneManager.LoadScene(nextSceneName);
         }
         else
         {
+            dialoguePanel.SetActive(false);
+            dialogueText.gameObject.SetActive(false);
+
             Debug.LogWarning("Scene tidak ditemukan: " + nextSceneName);
         }
     }
