@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+public class GameObjectGroup
+{
+    public List<GameObject> objects;
+}
+
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Visual Cue")]
@@ -29,6 +35,12 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Guide Step")]
     public bool nextGuideAfterDialogue = false;
+
+    [Header("Activate Objects Per Dialogue")]
+    public List<GameObjectGroup> activateObjects;
+
+    [Header("Deactivate Objects Per Dialogue")]
+    public List<GameObjectGroup> deactivateObjects;
 
     [Header("Scene After Dialogue")]
     public string[] sceneAfterDialogue;
@@ -104,6 +116,26 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     SceneManager.LoadScene(sceneName);
                     return;
+                }
+            }
+
+            // ACTIVATE MULTIPLE
+            if (activateObjects.Count > dialogueIndex)
+            {
+                foreach (GameObject obj in activateObjects[dialogueIndex].objects)
+                {
+                    if (obj != null)
+                        obj.SetActive(true);
+                }
+            }
+
+            // DEACTIVATE MULTIPLE
+            if (deactivateObjects.Count > dialogueIndex)
+            {
+                foreach (GameObject obj in deactivateObjects[dialogueIndex].objects)
+                {
+                    if (obj != null)
+                        obj.SetActive(false);
                 }
             }
 
