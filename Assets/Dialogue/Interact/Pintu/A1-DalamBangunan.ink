@@ -1,0 +1,1 @@
+“Kamar untuk keluarga Sultan beristirahat saat berkunjung.”

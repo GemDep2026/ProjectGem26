@@ -1,0 +1,1 @@
+“Mari kita pergi ke bagian depan, kita ambil jalan yang kanan” #speaker:Tour Guide #portrait:tourguide_more_friendly #layout:left
