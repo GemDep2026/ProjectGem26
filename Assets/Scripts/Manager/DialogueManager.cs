@@ -15,6 +15,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private Animator portraitAnimator;
+    [SerializeField] private GameObject portraitObject;
+    [SerializeField] private GameObject speakerFrameObject;
+
     private Animator layoutAnimator;
 
     private Story currentStory;
@@ -77,8 +80,10 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         // reset portrait, layout, and speaker
-        displayNameText.text = "Saras";
-        portraitAnimator.Play("default");
+        displayNameText.text = "";
+        // portraitAnimator.Play("empty");
+        portraitObject.SetActive(false);
+        speakerFrameObject.SetActive(false);
         layoutAnimator.Play("left");
 
         ContinueStory();
@@ -162,9 +167,11 @@ public class DialogueManager : MonoBehaviour
             switch (tagKey)
             {
                 case SPEAKER_TAG:
+                    speakerFrameObject.SetActive(true);
                     displayNameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
+                    portraitObject.SetActive(true);
                     portraitAnimator.Play(tagValue);
                     break;
                 case LAYOUT_TAG:
