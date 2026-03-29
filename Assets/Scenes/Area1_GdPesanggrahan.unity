@@ -1313,6 +1313,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1767048803}
   displayNameText: {fileID: 1767048802}
   portraitAnimator: {fileID: 1767048800}
+  portraitObject: {fileID: 914756417}
+  speakerFrameObject: {fileID: 2030807734}
 --- !u!1 &397282399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2810,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &914756417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1479919177818616274, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
+  m_PrefabInstance: {fileID: 1767048799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &926117490
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,6 +5360,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 277592715}
     m_Modifications:
+    - target: {fileID: 176058225966725372, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 315.4542
+      objectReference: {fileID: 0}
+    - target: {fileID: 176058225966725372, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -485.2729
+      objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5746,6 +5761,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4178709951878032271, guid: 5fc72d8c7a3cec940a8327d636cfb4f5, type: 3}
   m_PrefabInstance: {fileID: 1953583783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2030807734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3474745061767945813, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
+  m_PrefabInstance: {fileID: 1767048799}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2115842118
 GameObject:
