@@ -1,0 +1,1 @@
+“Bangunan ini memiliki dua ruangan, yang kanan adalah kamar Sultan, dan yang sebelah kiri adalah kamar untuk ngabedi, atau kuncen, atau abdi dalam keluarga sultan.” #speaker:Tour Guide #portrait:tourguide_wide_smile #layout:left
