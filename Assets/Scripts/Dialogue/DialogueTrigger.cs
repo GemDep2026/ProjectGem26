@@ -45,6 +45,12 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Scene After Dialogue")]
     public string[] sceneAfterDialogue;
 
+    [Header("Activate Objects Before Dialogue")]
+    public List<GameObjectGroup> activateBeforeDialogue;
+
+    [Header("Deactivate Objects Before Dialogue")]
+    public List<GameObjectGroup> deactivateBeforeDialogue;
+
     private bool dialogueWasPlaying = false;
     private int dialogueIndex = 0;
 
@@ -72,6 +78,26 @@ public class DialogueTrigger : MonoBehaviour
 
             if (InputManager.GetInstance().GetDialoguePressed())
             {
+                // ACTIVATE BEFORE DIALOGUE
+                if (activateBeforeDialogue.Count > dialogueIndex)
+                {
+                    foreach (GameObject obj in activateBeforeDialogue[dialogueIndex].objects)
+                    {
+                        if (obj != null)
+                            obj.SetActive(true);
+                    }
+                }
+
+                // DEACTIVATE BEFORE DIALOGUE
+                if (deactivateBeforeDialogue.Count > dialogueIndex)
+                {
+                    foreach (GameObject obj in deactivateBeforeDialogue[dialogueIndex].objects)
+                    {
+                        if (obj != null)
+                            obj.SetActive(false);
+                    }
+                }
+
                 if (npcMovement != null && npcMovement.IsGuiding())
                     return;
 

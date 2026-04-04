@@ -20,6 +20,11 @@ public class dialogue : MonoBehaviour
     [Header("Next Scene")]
     [SerializeField] private string nextSceneName;
 
+    [Header("Player Settings")]
+    public NpcMovement npcMovement;
+    public int[] guideTargetSteps;
+
+
     private Story story;
     private Coroutine typingCoroutine;
 
@@ -71,6 +76,7 @@ public class dialogue : MonoBehaviour
         {
             // Dialog selesai → player boleh bergerak lagi
             SetPlayerMovement(true);
+            npcMovement.StartGuide(guideTargetSteps[0]);
 
             StartCoroutine(LoadNextScene());
         }
