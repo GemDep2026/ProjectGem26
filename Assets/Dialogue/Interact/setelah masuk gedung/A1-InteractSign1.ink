@@ -1,0 +1,2 @@
+"Disini ada apa pak ? kenapa hawanya berbeda sekali?" #speaker:Gita #portrait:gita_nervous #layout:right
+"Coba kamu baca informasi yang ada di sign disana"#speaker:Tour Guide #portrait:tourguide_awkward #layout:left

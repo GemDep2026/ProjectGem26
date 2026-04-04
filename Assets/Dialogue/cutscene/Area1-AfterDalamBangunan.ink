@@ -1,0 +1,1 @@
+"Sesudah puas melihat area dalam gedung pesanggrahan mereka dituntun oleh tour guide untuk pergi ke alun - alun yang lokasinya tidak jauh dari gedung pesanggarahan"
