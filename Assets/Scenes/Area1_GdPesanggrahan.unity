@@ -251,7 +251,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: a18b61ccd99ac28469c18c0698699d7c, type: 3}
   guideTargetSteps: 0100000003000000
   questID: 0
-  objectiveIndex: 00000000
+  objectiveIndex: 0000000000000000
   completeObjectiveAfterDialogue: 1
   startGuideAfterDialogue: 1
   npcMovement: {fileID: 485818611}
@@ -5816,6 +5816,21 @@ MonoBehaviour:
     questName: Sign Tribun
     objectives:
     - objectiveName: Interact ke Sign Tribun
+      isCompleted: 0
+  - questID: 0
+    questName: NPC Tourguide
+    objectives:
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+      isCompleted: 0
+  - questID: 0
+    questName: Pintu Atas
+    objectives:
+    - objectiveName: Interact ke Pintu Atas
+      isCompleted: 0
+  - questID: 0
+    questName: Pintu Bawah
+    objectives:
+    - objectiveName: Interact ke Bawah
       isCompleted: 0
 --- !u!4 &2115842120
 Transform:
