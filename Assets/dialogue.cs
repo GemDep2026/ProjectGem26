@@ -74,9 +74,16 @@ public class dialogue : MonoBehaviour
         }
         else
         {
-            // Dialog selesai → player boleh bergerak lagi
             SetPlayerMovement(true);
-            npcMovement.StartGuide(guideTargetSteps[0]);
+
+            if (guideTargetSteps != null && guideTargetSteps.Length > 0)
+            {
+                npcMovement.StartGuide(guideTargetSteps[0]);
+            }
+            else
+            {
+                Debug.LogWarning("guideTargetSteps kosong atau belum diisi!");
+            }
 
             StartCoroutine(LoadNextScene());
         }

@@ -1,1 +1,1 @@
-“Di sebelah kanan ada Alun-alun Pandekemasan. Alun – alun ini berfungsi sebagai tempat berlatih perang bagi para prajurit kesultanan, khususnya prajurit penjaga Guha Sunyaragi.” #speaker:Tour Guide #portrait:tourguide_widesmile #layout:left
+“Di sebelah kanan ada Alun-alun Pandekemasan. Alun – alun ini berfungsi sebagai tempat berlatih perang bagi para prajurit kesultanan, khususnya prajurit penjaga Guha Sunyaragi.” #speaker:Tour Guide #portrait:tourguide_wide_smile #layout:left

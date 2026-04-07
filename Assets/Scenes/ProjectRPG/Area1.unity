@@ -2424,6 +2424,8 @@ MonoBehaviour:
   dialogueText: {fileID: 2103637176}
   displayNameText: {fileID: 2103637174}
   portraitAnimator: {fileID: 2103637175}
+  portraitObject: {fileID: 0}
+  speakerFrameObject: {fileID: 0}
 --- !u!1001 &1011367147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3270,11 +3272,16 @@ MonoBehaviour:
   guideDialogues: []
   guideTargetSteps: 
   questID: -1
-  objectiveIndex: -1
+  objectiveIndex: 
   completeObjectiveAfterDialogue: 0
   startGuideAfterDialogue: 0
   npcMovement: {fileID: 0}
   nextGuideAfterDialogue: 0
+  activateObjects: []
+  deactivateObjects: []
+  sceneAfterDialogue: []
+  activateBeforeDialogue: []
+  deactivateBeforeDialogue: []
 --- !u!1 &1788895328
 GameObject:
   m_ObjectHideFlags: 0
