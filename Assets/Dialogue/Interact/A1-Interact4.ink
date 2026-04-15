@@ -1,2 +1,3 @@
-“Bangunan putih ini gedung pesanggrahan, bangunan termuda, yang dibangun tahun 1848. Bangunannya memiliki 3 corak bangunan, yaitu Eropa, Cina dan Jawa. Pilar-pilarnya memiliki corak Eropa, bagian luarnya memiliki corak Jawa dan atapnya memiliki corak Cina. Fungsinya sebagai tempat istirahat keluarga sultan jika berkunjung.” #speaker:Tour Guide #portrait:tourguide_default #layout:left
+“Bangunan putih ini gedung pesanggrahan, bangunan termuda, yang dibangun tahun 1848. Bangunannya memiliki 3 corak bangunan, yaitu Eropa, Cina dan Jawa. #speaker:Tour Guide #portrait:tourguide_default #layout:left
+Pilar-pilarnya memiliki corak Eropa, bagian luarnya memiliki corak Jawa dan atapnya memiliki corak Cina. Fungsinya sebagai tempat istirahat keluarga sultan jika berkunjung.” #speaker:Tour Guide #portrait:tourguide_default #layout:left
 Gita, Baskara, Yudha : “Ohh…”

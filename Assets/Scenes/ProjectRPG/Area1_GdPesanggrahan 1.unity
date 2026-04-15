@@ -266,6 +266,8 @@ MonoBehaviour:
     - {fileID: 66625321}
     - {fileID: 1132319049}
   sceneAfterDialogue: []
+  activateBeforeDialogue: []
+  deactivateBeforeDialogue: []
 --- !u!1 &90646032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,6 +5039,8 @@ MonoBehaviour:
     - {fileID: 1553578334}
     - {fileID: 138423039}
   sceneAfterDialogue: []
+  activateBeforeDialogue: []
+  deactivateBeforeDialogue: []
 --- !u!61 &1553578337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6726,7 +6730,9 @@ MonoBehaviour:
   sceneAfterDialogue:
   - 
   - 
-  - Dalam Bangunan
+  - DalamGDPesanggrahan
+  activateBeforeDialogue: []
+  deactivateBeforeDialogue: []
 --- !u!61 &2133720232
 BoxCollider2D:
   m_ObjectHideFlags: 0
