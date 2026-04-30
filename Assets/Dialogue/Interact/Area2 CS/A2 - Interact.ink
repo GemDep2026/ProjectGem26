@@ -1,0 +1,2 @@
+“Di sebelah kiri sini ada Bangsal Jinem. Dimana sultan memberikan wejangan, pidato dan menyaksikan olah Kanuragan prajurit Keraton dan penjaga serta tarian tradisional.
+“Makna Jinem itu sendiri adalah Ji dari kata siji atau satu. Nem dari kata nenem atau enam. Mengambil makna dari Rukun Iman dalam islam yang terdiri dari enam, dan iman yang utama adalah beriman kepada satu, yaitu Allah.”

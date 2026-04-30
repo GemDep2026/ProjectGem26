@@ -989,9 +989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1075957117}
-  inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
+  inkJSON: {fileID: 4900000, guid: 1a68b562931c0bc4994d5be2ac7a03ec, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: a18b61ccd99ac28469c18c0698699d7c, type: 3}
+  - {fileID: 4900000, guid: 1a68b562931c0bc4994d5be2ac7a03ec, type: 3}
   guideTargetSteps: 01000000
   questID: 02000000
   objectiveIndex: 00000000
@@ -2674,9 +2674,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1632250421}
-  inkJSON: {fileID: 4900000, guid: a18b61ccd99ac28469c18c0698699d7c, type: 3}
+  inkJSON: {fileID: 4900000, guid: 1a68b562931c0bc4994d5be2ac7a03ec, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: a18b61ccd99ac28469c18c0698699d7c, type: 3}
+  - {fileID: 4900000, guid: 1a68b562931c0bc4994d5be2ac7a03ec, type: 3}
   sceneAfterDialogue: []
   activateAfterDialogue:
   - objects:
@@ -5661,7 +5661,7 @@ MonoBehaviour:
   visualCue: {fileID: 971589416}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: d4028f8506c6c3a4286fdc2f18f32c3c, type: 3}
   guideTargetSteps: 03000000
   questID: 03000000
   objectiveIndex: 00000000
@@ -6252,7 +6252,7 @@ MonoBehaviour:
   visualCue: {fileID: 44972403}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: d4028f8506c6c3a4286fdc2f18f32c3c, type: 3}
   sceneAfterDialogue: []
   activateAfterDialogue:
   - objects:

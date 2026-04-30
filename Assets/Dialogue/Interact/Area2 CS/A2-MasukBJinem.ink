@@ -1,0 +1,1 @@
+“Mari kita lihat kedalam bangsal jinem yang legendaris karena memiliki banyak cerita" #speaker:Tour Guide #portrait:tourguide_widesmile #layout:left
