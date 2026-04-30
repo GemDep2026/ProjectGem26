@@ -24,7 +24,7 @@ public class DialogueTrigger : MonoBehaviour
     public int[] guideTargetSteps;
 
     [Header("Quest")]
-    public int questID = -1;
+    public int[] questID;
     public int[] objectiveIndex;
     public bool completeObjectiveAfterDialogue = false;
 
@@ -55,6 +55,10 @@ public class DialogueTrigger : MonoBehaviour
     private int dialogueIndex = 0;
 
     private bool playerInRange;
+    private bool questAlreadyCompleted = false;
+    private HashSet<int> completedDialogueSteps = new HashSet<int>();
+
+    private static DialogueTrigger currentInteractor;
 
     private void Awake()
     {
@@ -66,7 +70,7 @@ public class DialogueTrigger : MonoBehaviour
         DialogueManager dialogueManager = DialogueManager.GetInstance();
         if (dialogueManager == null) return;
 
-        if (playerInRange && !dialogueManager.DialogueIsPlaying)
+        if (playerInRange && currentInteractor == this && !dialogueManager.DialogueIsPlaying)
         {
             if (npcMovement != null && npcMovement.IsGuiding())
             {
@@ -121,11 +125,19 @@ public class DialogueTrigger : MonoBehaviour
 
         if (dialogueWasPlaying && !isPlaying)
         {
-            if (completeObjectiveAfterDialogue && questID != -1)
+            if (completeObjectiveAfterDialogue)
             {
-                if (objectiveIndex.Length > dialogueIndex)
+                if (!completedDialogueSteps.Contains(dialogueIndex))
                 {
-                    QuestManager.Instance.CompleteObjective(questID, objectiveIndex[dialogueIndex]);
+                    if (questID.Length > dialogueIndex && objectiveIndex.Length > dialogueIndex)
+                    {
+                        QuestManager.Instance.CompleteObjective(
+                            questID[dialogueIndex],
+                            objectiveIndex[dialogueIndex]
+                        );
+
+                        completedDialogueSteps.Add(dialogueIndex);
+                    }
                 }
             }
 
@@ -176,6 +188,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             playerInRange = true;
+            currentInteractor = this;
         }
     }
 
@@ -184,6 +197,9 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             playerInRange = false;
+
+            if (currentInteractor == this)
+                currentInteractor = null;
         }
     }
 }
