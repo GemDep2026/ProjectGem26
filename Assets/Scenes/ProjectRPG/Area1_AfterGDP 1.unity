@@ -2841,12 +2841,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests:
-  - questID: 0
+  - sceneName: 
+    questID: 0
     questName: NPC Tourguide
     objectives:
     - objectiveName: Ngobrol NPC
       isCompleted: 0
-  - questID: 0
+  - sceneName: 
+    questID: 0
     questName: NPC Tourguide
     objectives:
     - objectiveName: Ngobrol NPC
@@ -4275,7 +4277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: mapName
-      value: Area2
+      value: AREA2
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: itemComplete

@@ -1,0 +1,3 @@
+“Sepertinya menarik pak bangunan bangsal jinem itu, dari luar mirip sekali dengan masjid” #speaker:Yuda #portrait:yuda_smiling #layout:right
+“Iya betul Yuda, aku juga jadi penasaran deh. Boleh ga ya pak kita masuk kedalam sana?” #speaker:Baskara #portrait:baskara_oh! #layout:right
+“Boleh, memang niat dari awal saya akan mengajak kalian kesana” #speaker:Tour Guide #portrait:tourguide_awkward #layout:left
