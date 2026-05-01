@@ -5354,7 +5354,7 @@ PrefabInstance:
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 3ff9eabb9f000d24f9ac709774fc2190, type: 3}
+      objectReference: {fileID: 4900000, guid: c96729634e03ed343831c2c64fbdadf5, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: npcMovement
       value: 

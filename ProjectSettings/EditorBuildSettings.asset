@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProjectRPG/DalamGDPesanggrahan.unity
     guid: 6c2259a6d3f177a4b98bd49753835156
+  - enabled: 1
+    path: Assets/Scenes/Area2_BJinem.unity
+    guid: ecba9a21496904742adbff38f7e0d631
   m_configObjects: {}
