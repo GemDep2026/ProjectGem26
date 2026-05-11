@@ -5,25 +5,45 @@ using UnityEngine.SceneManagement;
 
 public class MapTrigger : MonoBehaviour
 {
+    [Header("Scene")]
     public string mapName;
     public Vector2 playerPosition;
     public string itemComplete;
 
+    [Header("Quest")]
+    public bool completeQuestOnTrigger = false;
+    public int questID;
+    public int objectiveIndex;
+
+    private bool alreadyTriggered = false;
+
     public void OnTriggerEnter2D(Collider2D other)
     {
+        if (alreadyTriggered) return;
+
         if (other.CompareTag("Player") && !other.isTrigger)
         {
+            alreadyTriggered = true;
+
+            // COMPLETE QUEST
+            if (completeQuestOnTrigger)
+            {
+                QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
+            }
+
             if (SceneManager.GetActiveScene().name == "MapMain")
             {
                 ItemDatabase.instance.SavePlayerPosition(playerPosition);
 
-                // Check if the item list count is at least 3 before loading the scene
+                // Check if item sudah lengkap
                 if (ItemDatabase.instance.itemListDestroy.Count == 3)
                 {
-                    // Use the serialized itemComplete if provided, otherwise use the default mapName
-                    string sceneToLoad = string.IsNullOrEmpty(itemComplete) ? mapName : itemComplete;
+                    string sceneToLoad = string.IsNullOrEmpty(itemComplete)
+                        ? mapName
+                        : itemComplete;
+
                     SceneManager.LoadScene(sceneToLoad);
-                    return; // Don't proceed to the next scene load
+                    return;
                 }
             }
 

@@ -2575,6 +2575,10 @@ PrefabInstance:
       value: -3.68
       objectReference: {fileID: 0}
     - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
+      propertyPath: completeQuestOnTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425281184350915839, guid: 835130646ef01c54a8854432e60f3a3c, type: 3}
       propertyPath: playerPositions.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3248,65 +3252,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &938779460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 938779462}
-  - component: {fileID: 938779461}
-  m_Layer: 0
-  m_Name: QuestManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &938779461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938779460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb9a1ea6f72380c48b52387faf53350d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quests:
-  - sceneName: 
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol NPC
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol NPC
-      isCompleted: 0
-    - objectiveName: Pergi ke lokasi
-      isCompleted: 0
---- !u!4 &938779462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938779460}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 587.3199, y: 102.16137, z: -11.440013}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958194477
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +4966,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7383242859308579867, guid: 4b0cf7f2a29d65843bbd577e371a3498, type: 3}
   m_PrefabInstance: {fileID: 1550622349}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1555921518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555921520}
+  - component: {fileID: 1555921519}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1555921519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555921518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9a1ea6f72380c48b52387faf53350d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - sceneName: Area1_AfterGDP
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Mengikuti NPC Tourguide dan Interact ke Sign
+      isCompleted: 0
+  - sceneName: Area2
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+      isCompleted: 0
+  - sceneName: Area2
+    questID: 0
+    questName: Sign
+    objectives:
+    - objectiveName: Interact ke Sign
+      isCompleted: 0
+  - sceneName: Area2
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Interact ke NPC
+      isCompleted: 0
+  - sceneName: Area2
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+      isCompleted: 0
+  - sceneName: Area2
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+      isCompleted: 0
+--- !u!4 &1555921520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555921518}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 587.3199, y: 102.16137, z: -11.440013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1569036867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7024,7 +7050,6 @@ SceneRoots:
   - {fileID: 1585344712}
   - {fileID: 409960829}
   - {fileID: 538223357}
-  - {fileID: 938779462}
   - {fileID: 1614410195}
   - {fileID: 451171559}
   - {fileID: 636899367}
@@ -7036,3 +7061,4 @@ SceneRoots:
   - {fileID: 2062063650}
   - {fileID: 795699053}
   - {fileID: 1783160837}
+  - {fileID: 1555921520}
