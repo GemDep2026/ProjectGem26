@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ProjectRPG/Prolog.unity
     guid: 546ff57f5ea75af4ea8fd42af558684c
   - enabled: 0
-    path: Assets/Scenes/Area1.unity
+    path: Assets/Scenes/AREA 1/Area1.unity
     guid: 187fa4702fb35ac4ea62dbda387933bc
   - enabled: 0
     path: Assets/Scenes/ProjectRPG/Area1_GdPesanggrahan 1.unity
@@ -33,13 +33,13 @@ EditorBuildSettings:
     path: Assets/Scenes/GdPesanggrahan.unity
     guid: 049385f73b16c694cb17a27f8338844a
   - enabled: 1
-    path: Assets/Scenes/Area1_AfterGDP.unity
+    path: Assets/Scenes/AREA 1/Area1_AfterGDP.unity
     guid: 6bb388df80beb0d428890c07dcbf1a4c
   - enabled: 0
     path: Assets/Scenes/ProjectRPG/Dalam Bangunan.unity
     guid: 4de4da29adc438747bf72a7958705ecf
   - enabled: 1
-    path: Assets/Scenes/Area2.unity
+    path: Assets/Scenes/AREA 2/Area2.unity
     guid: c52faff1de908f041b640185b89ef61d
   - enabled: 1
     path: Assets/Scenes/ProjectRPG/Area1_AfterGDP 1.unity
@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ProjectRPG/DalamGDPesanggrahan.unity
     guid: e4762dcd6843a3141a82fce4c7feeeef
   - enabled: 1
-    path: Assets/Scenes/Area2_BJinem.unity
+    path: Assets/Scenes/AREA 2/Area2_BJinem.unity
     guid: ecba9a21496904742adbff38f7e0d631
   - enabled: 1
     path: Assets/Scenes/ProjectRPG/Area1.unity
