@@ -1,1 +1,0 @@
-“Gua Peteng, berfungsi sebagai tempat para prajurit melatih ilmu kanuragan.”

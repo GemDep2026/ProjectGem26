@@ -1,1 +1,0 @@
-“Dapat dilihat ada kolam di depan, namanya Kolam Kaputren. Dahulunya merupakan tempat bermain air para putra putri kesultanan ketika berada di area Taman Air Guha Sunyaragi. Dahulu sekeliling kolam ini dihiasi ornamen piring dari Cina. Namun saat ini hanya tinggal bekas tempat menempelkannya saja.” #speaker:Tour Guide #portrait:tourguide_wide_smile #layout:left

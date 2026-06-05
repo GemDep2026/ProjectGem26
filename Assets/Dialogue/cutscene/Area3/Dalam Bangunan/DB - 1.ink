@@ -1,1 +1,0 @@
-“Nah disini, adalah mande beling. Tempat untuk beristirahat/duduk-duduk para keluarga sultan. Disebut beling ini karena bahannya dari marmer, dan mengkilap seperti kaca.” #speaker:Tour Guide #portrait:tourguide_more_friendly #layout:left

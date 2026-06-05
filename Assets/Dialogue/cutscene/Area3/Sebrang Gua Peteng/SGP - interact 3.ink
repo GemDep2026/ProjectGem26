@@ -1,1 +1,0 @@
-“Patung Gajah merupakan simbol hewan yang perkasa.”
