@@ -22,6 +22,7 @@ public class NpcMovement : MonoBehaviour
     public Transform[] guidePoints;
     private int guideStep = 0;
     private int targetGuideStep = 0;
+    [SerializeField] private bool startGuideOnStart = false;
     [SerializeField] private int startingGuideStep = 0;
 
     [Header("Guide Follow Settings")]
@@ -34,7 +35,14 @@ public class NpcMovement : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        guideStep = startingGuideStep;
+        
+        guideStep = 0;
+        targetGuideStep = startingGuideStep;
+
+        if (startGuideOnStart)
+        {
+            currentState = NPCState.Guide;
+        }
     }
 
     void Update()

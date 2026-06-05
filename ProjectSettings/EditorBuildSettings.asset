@@ -8,36 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 0045cd909d6cb9e4ab7f4fd46b96eb77
-  - enabled: 0
-    path: Assets/Scenes/Puzzle_Lvl1.unity
-    guid: f975470742c62214583404aafcf196b3
-  - enabled: 0
-    path: Assets/Scenes/Puzzle_Lvl2.unity
-    guid: 275274d4a494d024c8df799297eec2e9
-  - enabled: 0
-    path: Assets/Scenes/Puzzle_Lvl3.unity
-    guid: 919d954e04451ca4bbdf59d589552729
   - enabled: 1
     path: Assets/Scenes/GameplayTest 1.unity
     guid: 3ecd057d0a6bec8428ff3af5d7f45460
   - enabled: 1
     path: Assets/Scenes/ProjectRPG/Prolog.unity
     guid: 546ff57f5ea75af4ea8fd42af558684c
-  - enabled: 0
-    path: Assets/Scenes/AREA 1/Area1.unity
-    guid: 187fa4702fb35ac4ea62dbda387933bc
-  - enabled: 0
-    path: Assets/Scenes/ProjectRPG/Area1_GdPesanggrahan 1.unity
-    guid: 085a715e6d679e7408c67077f4ee7b09
   - enabled: 1
-    path: Assets/Scenes/GdPesanggrahan.unity
+    path: Assets/Scenes/AREA 1/GdPesanggrahan.unity
     guid: 049385f73b16c694cb17a27f8338844a
   - enabled: 1
     path: Assets/Scenes/AREA 1/Area1_AfterGDP.unity
     guid: 6bb388df80beb0d428890c07dcbf1a4c
-  - enabled: 0
-    path: Assets/Scenes/ProjectRPG/Dalam Bangunan.unity
-    guid: 4de4da29adc438747bf72a7958705ecf
   - enabled: 1
     path: Assets/Scenes/AREA 2/Area2.unity
     guid: c52faff1de908f041b640185b89ef61d
@@ -56,4 +38,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProjectRPG/AREA2.unity
     guid: 6c31de4d83a472a46a1d38171f2d16d6
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3.unity
+    guid: d6f7841a7fbbe004fbd9f07b57253a25
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_AfterGoaLawo.unity
+    guid: acad0264b653f244e89a6be6e473eea8
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_AfterGoaPawon.unity
+    guid: 68097080454ef6342a1150d7a8d43e30
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_DalamMandeBeling.unity
+    guid: 3560f5c7404114e459a9d87df55bec73
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_GoaLawo.unity
+    guid: bfc3278f88360474e8a5b11f38482f56
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_GoaPawon.unity
+    guid: 4c0f923923e9d1a4181df8e74bb2fe44
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1.unity
+    guid: e18806650245e824e85cfda837a5f5a7
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2.unity
+    guid: 426a5af7f93231c468b7353f3beca79b
   m_configObjects: {}
