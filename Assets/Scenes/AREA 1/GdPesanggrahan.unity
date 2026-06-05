@@ -189,6 +189,7 @@ MonoBehaviour:
   guidePoints:
   - {fileID: 2087730039}
   - {fileID: 1255660628}
+  startGuideOnStart: 0
   startingGuideStep: 0
   player: {fileID: 356912887}
   waitDistance: 3
@@ -2814,65 +2815,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8997155770161588212, guid: 60204b89194f3f441a19cd30a0d174a8, type: 3}
   m_PrefabInstance: {fileID: 1125593733}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1222380557
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1222380559}
-  - component: {fileID: 1222380558}
-  m_Layer: 0
-  m_Name: QuestManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1222380558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222380557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb9a1ea6f72380c48b52387faf53350d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quests:
-  - sceneName: 
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol NPC
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol NPC
-      isCompleted: 0
-    - objectiveName: Pergi ke lokasi
-      isCompleted: 0
---- !u!4 &1222380559
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222380557}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 587.3199, y: 102.16137, z: -11.440013}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223450682
 GameObject:
   m_ObjectHideFlags: 0
@@ -4805,6 +4747,69 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.004827, y: 7.810826}
   m_EdgeRadius: 0
+--- !u!1 &1736133073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736133075}
+  - component: {fileID: 1736133074}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1736133074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736133073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9a1ea6f72380c48b52387faf53350d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - sceneName: DalamGdPesanggrahan
+    questID: 0
+    questName: Pintu Atas
+    objectives:
+    - objectiveName: Interact ke Pintu Atas
+      isCompleted: 0
+  - sceneName: DalamGdPesanggrahan
+    questID: 0
+    questName: Pintu Bawah
+    objectives:
+    - objectiveName: Interact ke Bawah
+      isCompleted: 0
+  - sceneName: DalamGdPesanggrahan
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+      isCompleted: 0
+--- !u!4 &1736133075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736133073}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 587.3199, y: 102.16137, z: -11.440013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1764737570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5864,7 +5869,7 @@ SceneRoots:
   - {fileID: 1039153130}
   - {fileID: 1382294510}
   - {fileID: 1876186657}
-  - {fileID: 1222380559}
   - {fileID: 1472438490}
   - {fileID: 998481015}
   - {fileID: 1982176619}
+  - {fileID: 1736133075}

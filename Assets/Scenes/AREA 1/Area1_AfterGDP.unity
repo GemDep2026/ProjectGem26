@@ -4169,6 +4169,7 @@ MonoBehaviour:
   - {fileID: 1570417050}
   - {fileID: 579853183}
   - {fileID: 436537780}
+  startGuideOnStart: 0
   startingGuideStep: 0
   player: {fileID: 936429490}
   waitDistance: 3
@@ -4996,41 +4997,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests:
+  - sceneName: Area2
+    questID: 0
+    questName: NPC
+    objectives:
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+      isCompleted: 0
   - sceneName: Area1_AfterGDP
     questID: 0
     questName: NPC
     objectives:
     - objectiveName: Mengikuti NPC Tourguide dan Interact ke Sign
       isCompleted: 0
-  - sceneName: Area2
+  - sceneName: Area1_AfterGDP
     questID: 0
     questName: NPC
     objectives:
-    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
-      isCompleted: 0
-  - sceneName: Area2
-    questID: 0
-    questName: Sign
-    objectives:
-    - objectiveName: Interact ke Sign
-      isCompleted: 0
-  - sceneName: Area2
-    questID: 0
-    questName: NPC
-    objectives:
-    - objectiveName: Interact ke NPC
-      isCompleted: 0
-  - sceneName: Area2
-    questID: 0
-    questName: NPC
-    objectives:
-    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
-      isCompleted: 0
-  - sceneName: Area2
-    questID: 0
-    questName: NPC
-    objectives:
-    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide
       isCompleted: 0
 --- !u!4 &1555921520
 Transform:

@@ -5710,37 +5710,7 @@ MonoBehaviour:
     questID: 0
     questName: NPC Tourguide
     objectives:
-    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: Sign Tribun
-    objectives:
-    - objectiveName: Interact ke Sign Tribun
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: Sign Tribun
-    objectives:
-    - objectiveName: Interact ke Sign Tribun
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide dan Ngobrol NPC  Tourguide
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: Pintu Atas
-    objectives:
-    - objectiveName: Interact ke Pintu Atas
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: Pintu Bawah
-    objectives:
-    - objectiveName: Interact ke Bawah
+    - objectiveName: Pergi ke lokasi mengikuti NPC Tourguide
       isCompleted: 0
 --- !u!4 &2115842120
 Transform:

@@ -15,7 +15,7 @@ public class QuestManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -60,5 +60,17 @@ public class QuestManager : MonoBehaviour
         return null;
 
         return quests[currentQuestIndex];
+
+        // string currentScene = SceneManager.GetActiveScene().name;
+
+        // foreach (Quest quest in quests)
+        // {
+        //     if (quest.sceneName == currentScene)
+        //     {
+        //         return quest;
+        //     }
+        // }
+
+        // return null;
     }
 }
