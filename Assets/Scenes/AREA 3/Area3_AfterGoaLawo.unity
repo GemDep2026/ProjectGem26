@@ -648,7 +648,7 @@ Transform:
   m_GameObject: {fileID: 249937326}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.38, y: -5.15, z: -0.048604652}
+  m_LocalPosition: {x: 30.38, y: -4.85, z: -0.048604652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -702,7 +702,7 @@ MonoBehaviour:
   visualCue: {fileID: 1555071388}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: a8b47e868e63a4a42ac85c127fccc202, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   visualCue: {fileID: 1584298631}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: 55aadaf14573ea04693e1422403d6afd, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -1428,15 +1428,10 @@ Transform:
   m_Children:
   - {fileID: 1062652066}
   - {fileID: 249937327}
-  - {fileID: 801394873}
   - {fileID: 704831133}
-  - {fileID: 2063451288}
   - {fileID: 2013823028}
-  - {fileID: 344074285}
   - {fileID: 385403631}
-  - {fileID: 962032666}
   - {fileID: 1849709764}
-  - {fileID: 1207476246}
   - {fileID: 1406110197}
   - {fileID: 795809280}
   - {fileID: 1945849157}
@@ -1604,37 +1599,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340559619}
   m_CullTransparentMesh: 1
---- !u!1 &344074284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 344074285}
-  m_Layer: 0
-  m_Name: Point TARGET (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &344074285
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344074284}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.012999, y: -3.87, z: -0.048604652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 324953660}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359471147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +1750,7 @@ Transform:
   m_GameObject: {fileID: 385403630}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.694998, y: -3.5709999, z: -0.048604652}
+  m_LocalPosition: {x: 28.694998, y: -3.23, z: -0.048604652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2221,15 +2185,10 @@ MonoBehaviour:
   guidePoints:
   - {fileID: 1062652066}
   - {fileID: 249937327}
-  - {fileID: 801394873}
   - {fileID: 704831133}
-  - {fileID: 2063451288}
   - {fileID: 2013823028}
-  - {fileID: 344074285}
   - {fileID: 385403631}
-  - {fileID: 962032666}
   - {fileID: 1849709764}
-  - {fileID: 1207476246}
   - {fileID: 1406110197}
   - {fileID: 795809280}
   - {fileID: 1945849157}
@@ -2237,7 +2196,7 @@ MonoBehaviour:
   - {fileID: 275740268}
   - {fileID: 638461790}
   startGuideOnStart: 1
-  startingGuideStep: 14
+  startingGuideStep: 9
   player: {fileID: 100479430}
   waitDistance: 3
 --- !u!95 &485818612
@@ -3145,7 +3104,7 @@ Transform:
   m_GameObject: {fileID: 704831132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.864998, y: -4.653, z: -0.048604652}
+  m_LocalPosition: {x: 29.864998, y: -4.33, z: -0.048604652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3444,37 +3403,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 324953660}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &801394872
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 801394873}
-  m_Layer: 0
-  m_Name: Point TARGET (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &801394873
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801394872}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.131998, y: -4.908, z: -0.048604652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 324953660}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &843635120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3741,37 +3669,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949952873}
   m_CullTransparentMesh: 1
---- !u!1 &962032665
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 962032666}
-  m_Layer: 0
-  m_Name: Point TARGET (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &962032666
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962032665}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.414999, y: -3.304, z: -0.048604652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 324953660}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &982544702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4595,37 +4492,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &1207476245
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1207476246}
-  m_Layer: 0
-  m_Name: Point TARGET (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1207476246
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207476245}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.848, y: -2.75, z: -0.048604652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 324953660}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1261593435
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,7 +4897,7 @@ MonoBehaviour:
   visualCue: {fileID: 1879501964}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: be1b5edbe8cbf0443a5eb14d4335d91e, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -6654,7 +6520,7 @@ Transform:
   m_GameObject: {fileID: 1849709763}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.127998, y: -3.03, z: -0.048604652}
+  m_LocalPosition: {x: 28.127998, y: -2.68, z: -0.048604652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6895,7 +6761,7 @@ Transform:
   m_GameObject: {fileID: 2013823027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.331, y: -4.15, z: -0.048604652}
+  m_LocalPosition: {x: 29.331, y: -3.8, z: -0.048604652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7076,37 +6942,6 @@ PrefabInstance:
       addedObject: {fileID: 360820667}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
---- !u!1 &2063451287
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2063451288}
-  m_Layer: 0
-  m_Name: Point TARGET (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2063451288
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063451287}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.598, y: -4.4049997, z: -0.048604652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 324953660}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2115289776
 GameObject:
   m_ObjectHideFlags: 0
@@ -7510,11 +7345,11 @@ MonoBehaviour:
   visualCue: {fileID: 334248781}
   inkJSON: {fileID: 4900000, guid: eb4d7171af955ba4fb9ce0dd75696516, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  guideTargetSteps: 0e0000000e0000000e00000010000000
+  - {fileID: 4900000, guid: 8710def36a3a81c42b0d5580e4eece75, type: 3}
+  - {fileID: 4900000, guid: 014ee5c4a13221c4ea289734d237c421, type: 3}
+  - {fileID: 4900000, guid: 4208b8dc771a3de43b835bd9d2203e94, type: 3}
+  - {fileID: 4900000, guid: 918fb98a89cb05b478c44684334a6477, type: 3}
+  guideTargetSteps: 0900000009000000090000000b000000
   questID: 00000000000000000000000000000000
   objectiveIndex: 00000000000000000000000000000000
   completeObjectiveAfterDialogue: 1

@@ -1,0 +1,1 @@
+“Gua Langse, Langse artinya tirai. Berfungsi sebagai tempat untuk bermeditasi keluarga Sultan.”
