@@ -1694,6 +1694,7 @@ MonoBehaviour:
   - {fileID: 476825044}
   - {fileID: 2063702208}
   - {fileID: 1679019412}
+  startGuideOnStart: 0
   startingGuideStep: 0
   player: {fileID: 100479430}
   waitDistance: 3
