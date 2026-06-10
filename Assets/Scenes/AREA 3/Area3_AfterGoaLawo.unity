@@ -702,7 +702,7 @@ MonoBehaviour:
   visualCue: {fileID: 1555071388}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: a8b47e868e63a4a42ac85c127fccc202, type: 3}
+  - {fileID: 4900000, guid: be1b5edbe8cbf0443a5eb14d4335d91e, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -4897,7 +4897,7 @@ MonoBehaviour:
   visualCue: {fileID: 1879501964}
   inkJSON: {fileID: 4900000, guid: 89aa1a96c8f9e584097d94b166ccc7d4, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: be1b5edbe8cbf0443a5eb14d4335d91e, type: 3}
+  - {fileID: 4900000, guid: a8b47e868e63a4a42ac85c127fccc202, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
