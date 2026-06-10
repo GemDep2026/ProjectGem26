@@ -1657,6 +1657,7 @@ MonoBehaviour:
   - {fileID: 1578167706}
   - {fileID: 1501698390}
   - {fileID: 1098743571}
+  startGuideOnStart: 0
   startingGuideStep: 0
   player: {fileID: 100479430}
   waitDistance: 3
@@ -5913,7 +5914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2133720230
 Transform:
   m_ObjectHideFlags: 0
@@ -5944,11 +5945,9 @@ MonoBehaviour:
   visualCue: {fileID: 334248781}
   inkJSON: {fileID: 4900000, guid: eb4d7171af955ba4fb9ce0dd75696516, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: 7d7707b5945f27d428510bb721ceeea9, type: 3}
   guideTargetSteps: 00000000
-  questID: 
+  questID: 00000000
   objectiveIndex: 00000000
   completeObjectiveAfterDialogue: 1
   startGuideAfterDialogue: 1
@@ -5961,7 +5960,8 @@ MonoBehaviour:
   - objects:
     - {fileID: 2133720229}
     - {fileID: 334248781}
-  sceneAfterDialogue: []
+  sceneAfterDialogue:
+  - Area3_DMB_AfterPetengLT2
   activateBeforeDialogue: []
   deactivateBeforeDialogue: []
 --- !u!61 &2133720232

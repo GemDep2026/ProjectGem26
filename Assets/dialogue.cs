@@ -36,6 +36,7 @@ public class dialogue : MonoBehaviour
 
     private bool isTyping = false;
     private bool isLineFinished = false;
+    private bool dialogueEnded = false;
 
     private GameObject player;
 
@@ -76,6 +77,9 @@ public class dialogue : MonoBehaviour
 
     void DisplayNextLine()
     {
+        if (dialogueEnded)
+        return;
+
         if (story.canContinue)
         {
             string nextLine = story.Continue();
@@ -87,6 +91,8 @@ public class dialogue : MonoBehaviour
         }
         else
         {
+            dialogueEnded = true;
+
             SetPlayerMovement(true);
 
             if (npcMovement != null &&
