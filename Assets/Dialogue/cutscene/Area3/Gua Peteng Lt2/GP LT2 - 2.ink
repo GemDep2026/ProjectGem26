@@ -26,7 +26,8 @@
 
 “Menurutku omonganmu dari tadi nggak mencerminkan itu, sih.” #speaker:Yuda #portrait:yuda_annoyed #layout:right
 
-“Hah? Omongan yang mana yang bikin kamu nggak merasa di-welcome? Dari tadi aku nggak ada ngomong aneh-aneh, tuh. Aku cuma khawatir makanya aku suruh kamu lepas jaket, tapi kamu sendiri yang nggak mau. Aku juga kah yang salah? Lagian siapa suruh bajunya begitu, udah tahu mau papanasan.” #speaker:Baskara #portrait:baskara_confused #layout:right
+“Hah? Omongan yang mana yang bikin kamu nggak merasa di-welcome? Dari tadi aku nggak ada ngomong aneh-aneh, tuh. Aku cuma khawatir makanya aku suruh kamu lepas jaket, tapi kamu sendiri yang nggak mau." #speaker:Baskara #portrait:baskara_confused #layout:right
+"Aku juga kah yang salah? Lagian siapa suruh bajunya begitu, udah tahu mau papanasan.” #speaker:Baskara #portrait:baskara_confused #layout:right
 
 “Oke, jadi sekarang yang salah bajuku nih? Lagian kalian ngapain sih ngajak main ke tempat nggak jelas begini. Udah panas, sepi, ngebosenin lagi. Apa yang mau dilihat sih, batu-batuan doang!” #speaker:Yuda #portrait:yuda_angry #layout:right
 

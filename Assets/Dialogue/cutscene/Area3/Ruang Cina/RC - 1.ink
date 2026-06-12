@@ -1,0 +1,1 @@
+“Patung perawan sunti, perawan sunti sendiri artinya wanita yang hamil dan melahirkan tanpa melakukan hubungan seksual, dalam kepercayaan agama kristen ada Bunda Maria, dalam kepercayaan agama islam ada Siti Maryam, dan patung ini merujuk pada Putri Ong Tien.” ”Putri Ong Tien merupakan anak dari…”

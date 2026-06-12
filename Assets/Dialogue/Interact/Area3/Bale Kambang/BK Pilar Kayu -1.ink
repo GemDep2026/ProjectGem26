@@ -1,0 +1,1 @@
+Bagaikan salah satu fase pertumbuhan manusia, dimana mereka mudah dipengaruhi oleh orang lain dan lingkungannya.
