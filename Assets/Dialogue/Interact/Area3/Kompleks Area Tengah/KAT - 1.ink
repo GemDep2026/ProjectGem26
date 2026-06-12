@@ -9,6 +9,6 @@
 "Jadi, ruangan ini bisa menyimpan makanan cukup lama, ibaratnya seperti kulkas.” #speaker:Tour Guide #portrait:tourguide_more_friendly #layout:left
 “Wow…” #speaker:Gita #portrait:gita_oh! #layout:right
 “Nggak disangka teknologi zaman dulu cukup canggih.” #speaker:Baskara #portrait:baskara_oh! #layout:right
-“Huft…” #speaker:Yuda #portrait:yuda_huft #layout:Right
+“Huft…” #speaker:Yuda #portrait:yuda_huft #layout:right
 “Yuda, kamu nggak papa?” #speaker:Gita #portrait:gita_frown #layout:right
 “Nggak papa…” #speaker:Yuda #portrait:yuda_lookaway(2) #layout:right

@@ -5874,8 +5874,8 @@ MonoBehaviour:
   visualCue: {fileID: 334248781}
   inkJSON: {fileID: 4900000, guid: eb4d7171af955ba4fb9ce0dd75696516, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: bcfec9d0ea24c89478eef70db0ad0c13, type: 3}
+  - {fileID: 4900000, guid: e5dceab1c17a88c42b3a59bd740606ca, type: 3}
   guideTargetSteps: 0800000008000000
   questID: 0000000000000000
   objectiveIndex: 0000000000000000

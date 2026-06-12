@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2.unity
     guid: 426a5af7f93231c468b7353f3beca79b
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_DMB_AfterPetengLT2.unity
+    guid: 5e86cd71314bcbf4daa7fb088f4b7d99
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_DepanMB.unity
+    guid: a517b85b2c855e14a96a7843aba40ad9
   m_configObjects: {}

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class dialogue : MonoBehaviour
 {
@@ -24,12 +25,18 @@ public class dialogue : MonoBehaviour
     public NpcMovement npcMovement;
     public int[] guideTargetSteps;
 
+    [Header("Fade Transition")]
+    [SerializeField] private bool useFadeTransition = true;
+    [SerializeField] private CanvasGroup blackScreen;
+    [SerializeField] private float fadeDuration = 1f;
+
 
     private Story story;
     private Coroutine typingCoroutine;
 
     private bool isTyping = false;
     private bool isLineFinished = false;
+    private bool dialogueEnded = false;
 
     private GameObject player;
 
@@ -43,6 +50,13 @@ public class dialogue : MonoBehaviour
 
         story = new Story(inkJSON.text);
         dialoguePanel.SetActive(true);
+
+        // if (useFadeTransition && blackScreen != null)
+        // {
+        //     StartCoroutine(FadeFromBlack());
+        // }
+
+
         DisplayNextLine();
     }
 
@@ -63,6 +77,9 @@ public class dialogue : MonoBehaviour
 
     void DisplayNextLine()
     {
+        if (dialogueEnded)
+        return;
+
         if (story.canContinue)
         {
             string nextLine = story.Continue();
@@ -74,9 +91,13 @@ public class dialogue : MonoBehaviour
         }
         else
         {
+            dialogueEnded = true;
+
             SetPlayerMovement(true);
 
-            if (guideTargetSteps != null && guideTargetSteps.Length > 0)
+            if (npcMovement != null &&
+                guideTargetSteps != null &&
+                guideTargetSteps.Length > 0)
             {
                 npcMovement.StartGuide(guideTargetSteps[0]);
             }
@@ -144,9 +165,75 @@ public class dialogue : MonoBehaviour
         {
             dialoguePanel.SetActive(false);
             dialogueText.gameObject.SetActive(false);
+            
+            if (useFadeTransition && blackScreen != null)
+            {
+                StartCoroutine(FadeFromBlack());
+            }
 
             Debug.LogWarning("Scene tidak ditemukan: " + nextSceneName);
         }
+    }
+
+    IEnumerator FadeAndLoadScene()
+    {
+        yield return StartCoroutine(FadeToBlack());
+
+        if (!string.IsNullOrEmpty(nextSceneName) &&
+            Application.CanStreamedLevelBeLoaded(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            dialoguePanel.SetActive(false);
+            dialogueText.gameObject.SetActive(false);
+        }
+    }
+
+    IEnumerator FadeToBlack()
+    {
+        float elapsedTime = 0f;
+
+        blackScreen.gameObject.SetActive(true);
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            blackScreen.alpha = Mathf.Lerp(
+                0f,
+                1f,
+                elapsedTime / fadeDuration
+            );
+
+            yield return null;
+        }
+
+        blackScreen.alpha = 1f;
+    }
+
+    IEnumerator FadeFromBlack()
+    {
+        blackScreen.gameObject.SetActive(true);
+        blackScreen.alpha = 1f;
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            blackScreen.alpha = Mathf.Lerp(
+                1f,
+                0f,
+                elapsedTime / fadeDuration
+            );
+
+            yield return null;
+        }
+
+        blackScreen.alpha = 0f;
     }
 
     void SetPlayerMovement(bool state)
