@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AREA 3/Area3_DepanMB.unity
     guid: a517b85b2c855e14a96a7843aba40ad9
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_GoaPawon_TASK1.unity
+    guid: ddaf4a36fe170dd4989373b144b8b2b7
   m_configObjects: {}

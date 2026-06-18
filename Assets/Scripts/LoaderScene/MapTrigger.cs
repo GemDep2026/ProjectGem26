@@ -15,6 +15,9 @@ public class MapTrigger : MonoBehaviour
     public int questID;
     public int objectiveIndex;
 
+    [Header("Fade")]
+    public bool useFadeTransition = true;
+
     private bool alreadyTriggered = false;
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -31,23 +34,30 @@ public class MapTrigger : MonoBehaviour
                 QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
             }
 
-            if (SceneManager.GetActiveScene().name == "MapMain")
+            // if (SceneManager.GetActiveScene().name == "MapMain")
+            // {
+            //     ItemDatabase.instance.SavePlayerPosition(playerPosition);
+
+            //     // Check if item sudah lengkap
+            //     if (ItemDatabase.instance.itemListDestroy.Count == 3)
+            //     {
+            //         string sceneToLoad = string.IsNullOrEmpty(itemComplete)
+            //             ? mapName
+            //             : itemComplete;
+
+            //         SceneManager.LoadScene(sceneToLoad);
+            //         return;
+            //     }
+            // }
+
+            if (useFadeTransition && FadeManager.Instance != null)
             {
-                ItemDatabase.instance.SavePlayerPosition(playerPosition);
-
-                // Check if item sudah lengkap
-                if (ItemDatabase.instance.itemListDestroy.Count == 3)
-                {
-                    string sceneToLoad = string.IsNullOrEmpty(itemComplete)
-                        ? mapName
-                        : itemComplete;
-
-                    SceneManager.LoadScene(sceneToLoad);
-                    return;
-                }
+                FadeManager.Instance.FadeToScene(mapName);
             }
-
-            SceneManager.LoadScene(mapName);
+            else
+            {
+                SceneManager.LoadScene(mapName);
+            }
         }
     }
 }

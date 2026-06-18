@@ -110,9 +110,13 @@ public class DialogueTrigger : MonoBehaviour
                     dialogueIndex = Mathf.Clamp(dialogueIndex, 0, guideDialogues.Length - 1);
                     dialogueManager.EnterDialogueMode(guideDialogues[dialogueIndex]);
                 }
-                else
+                else if (inkJSON != null)
                 {
                     dialogueManager.EnterDialogueMode(inkJSON);
+                }
+                else
+                {
+                    ExecuteAfterInteraction();
                 }
             }
         }
@@ -182,6 +186,68 @@ public class DialogueTrigger : MonoBehaviour
 
         dialogueWasPlaying = isPlaying;
     }    
+
+    void ExecuteAfterInteraction()
+    {
+        // Quest
+        if (completeObjectiveAfterDialogue)
+        {
+            if (!completedDialogueSteps.Contains(dialogueIndex))
+            {
+                if (questID.Length > dialogueIndex &&
+                    objectiveIndex.Length > dialogueIndex)
+                {
+                    QuestManager.Instance.CompleteObjective(
+                        questID[dialogueIndex],
+                        objectiveIndex[dialogueIndex]
+                    );
+
+                    completedDialogueSteps.Add(dialogueIndex);
+                }
+            }
+        }
+
+        // NPC Guide
+        if (npcMovement != null &&
+            guideTargetSteps.Length > dialogueIndex)
+        {
+            npcMovement.StartGuide(guideTargetSteps[dialogueIndex]);
+        }
+
+        // Activate
+        if (activateObjects.Count > dialogueIndex)
+        {
+            foreach (GameObject obj in activateObjects[dialogueIndex].objects)
+            {
+                if (obj != null)
+                    obj.SetActive(true);
+            }
+        }
+
+        // Deactivate
+        if (deactivateObjects.Count > dialogueIndex)
+        {
+            foreach (GameObject obj in deactivateObjects[dialogueIndex].objects)
+            {
+                if (obj != null)
+                    obj.SetActive(false);
+            }
+        }
+
+        // Scene Change
+        if (sceneAfterDialogue.Length > dialogueIndex)
+        {
+            string sceneName = sceneAfterDialogue[dialogueIndex];
+
+            if (!string.IsNullOrEmpty(sceneName))
+            {
+                SceneManager.LoadScene(sceneName);
+                return;
+            }
+        }
+
+        dialogueIndex++;
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
