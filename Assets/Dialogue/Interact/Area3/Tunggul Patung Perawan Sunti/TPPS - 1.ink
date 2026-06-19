@@ -1,0 +1,1 @@
+( “Tunggul perawan sunti. Tunggul ini hanya pengganti. Patung perawan sunti yang asli disimpan di suatu tempat terkunci di situs ini.” )

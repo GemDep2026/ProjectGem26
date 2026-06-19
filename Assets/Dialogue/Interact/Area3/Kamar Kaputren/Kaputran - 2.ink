@@ -1,0 +1,1 @@
+Kaputran, memiliki fungsi yang sama dengan kaputren, hanya saja untuk anak laki-laki.
