@@ -987,8 +987,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1844228521}
   - {fileID: 405884421}
+  - {fileID: 1844228521}
   - {fileID: 596936403}
   - {fileID: 1198451982}
   - {fileID: 1767048801}
@@ -5935,6 +5935,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.004827, y: 7.810826}
   m_EdgeRadius: 0
+--- !u!1001 &4161954990585575175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.407236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2402292
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03186307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2790106630442114517, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_Name
+      value: ColliderArea3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6edab08c30fefa468c36544017525f2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5952,3 +6009,4 @@ SceneRoots:
   - {fileID: 2115842120}
   - {fileID: 265123463}
   - {fileID: 1165412926}
+  - {fileID: 4161954990585575175}
