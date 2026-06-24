@@ -2192,7 +2192,7 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: d299ecc6bcfbb424cbba8555ce4ac6eb, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: blackScreen

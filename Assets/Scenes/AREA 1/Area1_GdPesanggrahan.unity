@@ -1004,13 +1004,10 @@ MonoBehaviour:
     - {fileID: 1616220710}
   deactivateObjects:
   - objects:
-    - {fileID: 1890761379}
     - {fileID: 212449900}
     - {fileID: 1075957117}
   sceneAfterDialogue: []
-  activateBeforeDialogue:
-  - objects:
-    - {fileID: 1890761379}
+  activateBeforeDialogue: []
   deactivateBeforeDialogue: []
 --- !u!61 &212449903
 BoxCollider2D:
@@ -2206,6 +2203,7 @@ MonoBehaviour:
   - {fileID: 1561113489}
   - {fileID: 90646033}
   - {fileID: 1561833043}
+  startGuideOnStart: 0
   startingGuideStep: 0
   player: {fileID: 100479430}
   waitDistance: 3
@@ -2681,12 +2679,8 @@ MonoBehaviour:
   activateAfterDialogue:
   - objects:
     - {fileID: 2133720229}
-  deactivateAfterDialogue:
-  - objects:
-    - {fileID: 1890761379}
-  activateBeforeDialogue:
-  - objects:
-    - {fileID: 1890761379}
+  deactivateAfterDialogue: []
+  activateBeforeDialogue: []
   deactivateBeforeDialogue:
   - objects:
     - {fileID: 2133720229}
@@ -4818,11 +4812,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343054454}
   m_CullTransparentMesh: 1
---- !u!1 &1354476762 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-  m_PrefabInstance: {fileID: 236582670}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1392409929
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,13 +5665,10 @@ MonoBehaviour:
     - {fileID: 1765245163}
   deactivateObjects:
   - objects:
-    - {fileID: 1890761379}
     - {fileID: 1616220710}
     - {fileID: 971589416}
   sceneAfterDialogue: []
-  activateBeforeDialogue:
-  - objects:
-    - {fileID: 1890761379}
+  activateBeforeDialogue: []
   deactivateBeforeDialogue: []
 --- !u!61 &1616220713
 BoxCollider2D:
@@ -6257,12 +6243,8 @@ MonoBehaviour:
   activateAfterDialogue:
   - objects:
     - {fileID: 2133720229}
-  deactivateAfterDialogue:
-  - objects:
-    - {fileID: 1354476762}
-  activateBeforeDialogue:
-  - objects:
-    - {fileID: 1354476762}
+  deactivateAfterDialogue: []
+  activateBeforeDialogue: []
   deactivateBeforeDialogue:
   - objects:
     - {fileID: 2133720229}
@@ -7040,11 +7022,6 @@ Transform:
   - {fileID: 638847848}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1890761379 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-  m_PrefabInstance: {fileID: 33402008}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1890761383 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
