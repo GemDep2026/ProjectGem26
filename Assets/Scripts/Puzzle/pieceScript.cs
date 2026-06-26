@@ -9,6 +9,9 @@ public class PieceScript : MonoBehaviour
     public bool Selected;
     public bool AllPieceInCurrentPosition;
 
+    [Header("Scene")]
+    [SerializeField] private string sceneToLoad = "MapMain";
+
     void Start()
     {
         randomPosition = transform.position;
@@ -47,7 +50,10 @@ public class PieceScript : MonoBehaviour
             }
         }
 
-        // If all pieces are in the correct position, reload the scene
-        SceneManager.LoadScene("MapMain");
+        // Semua puzzle selesai
+        if (!string.IsNullOrEmpty(sceneToLoad))
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
     }
 }

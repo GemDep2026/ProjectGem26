@@ -510,6 +510,7 @@ MonoBehaviour:
   InTruePosition: 0
   Selected: 0
   AllPieceInCurrentPosition: 0
+  sceneToLoad: Area3_GoaPetengLT2_TASK3_7
 --- !u!1 &326738155
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +968,7 @@ MonoBehaviour:
   InTruePosition: 0
   Selected: 0
   AllPieceInCurrentPosition: 0
+  sceneToLoad: Area3_GoaPetengLT2_TASK3_7
 --- !u!1 &773700748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1181,7 @@ MonoBehaviour:
   InTruePosition: 0
   Selected: 0
   AllPieceInCurrentPosition: 0
+  sceneToLoad: Area3_GoaPetengLT2_TASK3_7
 --- !u!1 &877007440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,6 +2254,7 @@ MonoBehaviour:
   InTruePosition: 0
   Selected: 0
   AllPieceInCurrentPosition: 0
+  sceneToLoad: Area3_GoaPetengLT2_TASK3_7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -786,7 +786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &265123460
 Rigidbody2D:
   serializedVersion: 4
@@ -1774,7 +1774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &395100232
 Rigidbody2D:
   serializedVersion: 4
@@ -6960,7 +6960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &2115289777
 Rigidbody2D:
   serializedVersion: 4
@@ -7134,51 +7134,15 @@ MonoBehaviour:
   quests:
   - sceneName: Area3
     questID: 0
-    questName: NPC Tourguide
+    questName: Goa Peteng
     objectives:
-    - objectiveName: Mengikuti NPC Tourguide dan Ngobrol dengan NPC Tourguide
+    - objectiveName: Pergi area Goa Peteng
       isCompleted: 0
   - sceneName: Area3
     questID: 0
-    questName: Sign 1
+    questName: Goa Peteng
     objectives:
-    - objectiveName: Interact Sign 1
-      isCompleted: 0
-  - sceneName: Area3
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol dengan NPC Tourguide
-      isCompleted: 0
-  - sceneName: Area3
-    questID: 0
-    questName: Sign 2
-    objectives:
-    - objectiveName: Interact Sign 2
-      isCompleted: 0
-  - sceneName: Area3
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol dengan NPC Tourguide
-      isCompleted: 0
-  - sceneName: Area3
-    questID: 0
-    questName: Sign 3
-    objectives:
-    - objectiveName: Interact Sign 3
-      isCompleted: 0
-  - sceneName: Area3
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Ngobrol dengan NPC Tourguide
-      isCompleted: 0
-  - sceneName: Area3
-    questID: 0
-    questName: NPC Tourguide
-    objectives:
-    - objectiveName: Mengikuti NPC Tourguide
+    - objectiveName: Pergi area Goa Peteng
       isCompleted: 0
 --- !u!4 &2115842120
 Transform:
