@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameplayTest 1.unity
     guid: 3ecd057d0a6bec8428ff3af5d7f45460
   - enabled: 1
-    path: Assets/Scenes/ProjectRPG/Prolog.unity
+    path: Assets/Scenes/Prolog.unity
     guid: 546ff57f5ea75af4ea8fd42af558684c
   - enabled: 1
     path: Assets/Scenes/AREA 1/GdPesanggrahan.unity
