@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 265123461}
   - component: {fileID: 265123460}
   m_Layer: 0
-  m_Name: Patung
+  m_Name: PagarPembatas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,7 +822,7 @@ Transform:
   m_GameObject: {fileID: 265123459}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94, y: 1.67, z: 0}
+  m_LocalPosition: {x: 0.51, y: 1.58, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   visualCue: {fileID: 1584298631}
   inkJSON: {fileID: 0}
   guideDialogues: []
-  guideTargetSteps: 01000000
+  guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
   completeObjectiveAfterDialogue: 1
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     - {fileID: 315284601}
     - {fileID: 1584298631}
   sceneAfterDialogue:
-  - Area3_GoaPetengLT2_TASK3_6
+  - JigsawArea3
   activateBeforeDialogue: []
   deactivateBeforeDialogue: []
 --- !u!61 &315284604
@@ -3643,7 +3643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1074136549
 Transform:
   m_ObjectHideFlags: 0
@@ -6105,15 +6105,9 @@ MonoBehaviour:
   quests:
   - sceneName: 
     questID: 0
-    questName: Patung Perawan Sunti
+    questName: 
     objectives:
-    - objectiveName: Interact dengan Tunggul Patung Perawan Sunti
-      isCompleted: 0
-  - sceneName: 
-    questID: 0
-    questName: Patung Perawan Sunti
-    objectives:
-    - objectiveName: Interact dengan Tunggul Patung Perawan Sunti
+    - objectiveName: Temukan cara untuk naik ke atas
       isCompleted: 0
 --- !u!4 &2115842120
 Transform:

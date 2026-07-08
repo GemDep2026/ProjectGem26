@@ -84,11 +84,8 @@ EditorBuildSettings:
     path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1_TASK3_5.unity
     guid: 23e3c842cb4a72e48b748cf42b073383
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2_TASK3_6.unity
-    guid: 8256eb147ceaf82499e29867ab96da23
-  - enabled: 1
     path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2_TASK3_7.unity
-    guid: 54a5c431dd5927e40b6a0c4244050c68
+    guid: 8256eb147ceaf82499e29867ab96da23
   - enabled: 1
     path: Assets/Scenes/AREA 3/JigsawArea3.unity
     guid: f975470742c62214583404aafcf196b3
@@ -98,4 +95,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AREA 3/Area3_KamarKaputren_TASK4_9.unity
     guid: 260333944f38df5419cc761e98e5db1d
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_AfterKamarKaputren_TASK5_10.unity
+    guid: 25a208a9398b59d4fbf39a1d36bf7d95
+  - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_AfterKamarKaputran_TASK5_11.unity
+    guid: bff4bb4711f04784393ddf114be2f18e
   m_configObjects: {}
