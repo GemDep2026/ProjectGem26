@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5237824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+  m_PrefabInstance: {fileID: 2044762784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &22457169
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,11 +722,11 @@ MonoBehaviour:
   - objects:
     - {fileID: 258714573}
     - {fileID: 1555071388}
-    - {fileID: 1165412928}
+    - {fileID: 354163945}
   sceneAfterDialogue: []
   activateBeforeDialogue:
   - objects:
-    - {fileID: 1165412928}
+    - {fileID: 354163945}
   deactivateBeforeDialogue: []
 --- !u!61 &258714576
 BoxCollider2D:
@@ -1599,6 +1604,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340559619}
   m_CullTransparentMesh: 1
+--- !u!1 &354163945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+  m_PrefabInstance: {fileID: 982544702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &359471147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,7 +3730,7 @@ PrefabInstance:
     - target: {fileID: 5239363646956990278, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 248ac11266c93f64fa30750a73f9984b, type: 3}
+      objectReference: {fileID: 21300000, guid: 2559fd76f5e9fc44fb2e5163f57f48a9, type: 3}
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4300,7 +4310,7 @@ PrefabInstance:
     - target: {fileID: 5239363646956990278, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 248ac11266c93f64fa30750a73f9984b, type: 3}
+      objectReference: {fileID: 21300000, guid: c9a9f28ca351c12408391691d41f75a5, type: 3}
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4912,11 +4922,11 @@ MonoBehaviour:
   - objects:
     - {fileID: 1364220703}
     - {fileID: 1879501964}
-    - {fileID: 1165412928}
+    - {fileID: 5237824}
   sceneAfterDialogue: []
   activateBeforeDialogue:
   - objects:
-    - {fileID: 1165412928}
+    - {fileID: 5237824}
   deactivateBeforeDialogue: []
 --- !u!61 &1364220706
 BoxCollider2D:
@@ -5985,6 +5995,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616842350}
   m_CullTransparentMesh: 1
+--- !u!1001 &1625868244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.407236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2402292
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03186307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744535302866697849, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2790106630442114517, guid: b6edab08c30fefa468c36544017525f2, type: 3}
+      propertyPath: m_Name
+      value: ColliderArea3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6edab08c30fefa468c36544017525f2, type: 3}
 --- !u!1 &1634590574
 GameObject:
   m_ObjectHideFlags: 0
@@ -6823,7 +6890,7 @@ PrefabInstance:
     - target: {fileID: 5239363646956990278, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 248ac11266c93f64fa30750a73f9984b, type: 3}
+      objectReference: {fileID: 21300000, guid: d583525fc898d93458417f54964485bb, type: 3}
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7444,3 +7511,4 @@ SceneRoots:
   - {fileID: 1165412926}
   - {fileID: 982544702}
   - {fileID: 2044762784}
+  - {fileID: 1625868244}

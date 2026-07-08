@@ -15,7 +15,7 @@ Yuda : “Ngebosenin banget-”
 Gita : “Ah, waktu kecil kan udah berkali-kali kesana”
 Gita : “Gimana kalau ke Gua Sunyaragi aja. Kita belum pernah kesana sama sekali kan? Masa orang Cirebon ga pernah kesana.”
 Yuda : “Hah, emangnya ada apa di Gua Sunyaragi”
-Baskari : “Ada gajah- ada gua lah Yud, apalagi?”
+Baskara : “Ada gajah- ada gua lah Yud, apalagi?”
 Yuda : “Cuma gua aja? Bosenin banget mau ngapain kesana…”
 Gita : “Yaelah yud, sekali-kali deh, mumpung kamu disini juga, masa orang Cirebon ga pernah kesana sama sekali.”
 Baskara : “Iya yud, kapan lagi, mumpung libur.”
