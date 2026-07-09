@@ -34,21 +34,6 @@ public class MapTrigger : MonoBehaviour
                 QuestManager.Instance.CompleteObjective(questID, objectiveIndex);
             }
 
-            // if (SceneManager.GetActiveScene().name == "MapMain")
-            // {
-            //     ItemDatabase.instance.SavePlayerPosition(playerPosition);
-
-            //     // Check if item sudah lengkap
-            //     if (ItemDatabase.instance.itemListDestroy.Count == 3)
-            //     {
-            //         string sceneToLoad = string.IsNullOrEmpty(itemComplete)
-            //             ? mapName
-            //             : itemComplete;
-
-            //         SceneManager.LoadScene(sceneToLoad);
-            //         return;
-            //     }
-            // }
 
             if (useFadeTransition && FadeManager.Instance != null)
             {

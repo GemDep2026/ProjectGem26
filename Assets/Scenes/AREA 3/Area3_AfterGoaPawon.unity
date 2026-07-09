@@ -399,7 +399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &202323183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +412,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1241e6ff6b5e24ab32faa839a88299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startButton: {fileID: 0}
+  openOptionsButton: {fileID: 0}
+  closeOptionsButton: {fileID: 0}
+  optionsPanel: {fileID: 0}
+  openSoundButton: {fileID: 0}
+  closeSoundButton: {fileID: 0}
+  soundPanel: {fileID: 0}
+  openCreditsButton: {fileID: 0}
+  closeCreditsButton: {fileID: 0}
+  creditsPanel: {fileID: 0}
+  quitButton: {fileID: 0}
+  quitYesButton: {fileID: 0}
+  quitNoButton: {fileID: 0}
+  quitPanel: {fileID: 0}
 --- !u!4 &202323184
 Transform:
   m_ObjectHideFlags: 0

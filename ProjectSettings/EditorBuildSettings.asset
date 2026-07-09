@@ -84,6 +84,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1_TASK3_5.unity
     guid: 23e3c842cb4a72e48b748cf42b073383
   - enabled: 1
+    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1_TASK3_6.unity
+    guid: 3e969b259d1db204f8bc3ee64f74b05e
+  - enabled: 1
     path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2_TASK3_7.unity
     guid: 8256eb147ceaf82499e29867ab96da23
   - enabled: 1
