@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 224280486}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: nextSceneName
-      value: AREA1
+      value: Area1_GdPesanggrahan
       objectReference: {fileID: 0}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: guideTargetSteps.Array.size

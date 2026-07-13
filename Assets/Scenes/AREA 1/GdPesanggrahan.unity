@@ -566,7 +566,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 339b28aa64f898741aae16fca8e378b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b54f25b317378f34e961539e65d7c7e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -586,8 +586,8 @@ Transform:
   m_GameObject: {fileID: 208763623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12478, y: 0.12478, z: 0}
+  m_LocalPosition: {x: 0.116, y: -0.116, z: 0}
+  m_LocalScale: {x: 0.19303466, y: 0.19453202, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1472438490}
@@ -944,6 +944,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1241e6ff6b5e24ab32faa839a88299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startButton: {fileID: 0}
+  openOptionsButton: {fileID: 0}
+  closeOptionsButton: {fileID: 0}
+  optionsPanel: {fileID: 0}
+  openSoundButton: {fileID: 0}
+  closeSoundButton: {fileID: 0}
+  soundPanel: {fileID: 0}
+  openCreditsButton: {fileID: 0}
+  closeCreditsButton: {fileID: 0}
+  creditsPanel: {fileID: 0}
+  quitButton: {fileID: 0}
+  quitYesButton: {fileID: 0}
+  quitNoButton: {fileID: 0}
+  quitPanel: {fileID: 0}
 --- !u!4 &347089894
 Transform:
   m_ObjectHideFlags: 0
@@ -3423,7 +3437,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 339b28aa64f898741aae16fca8e378b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b54f25b317378f34e961539e65d7c7e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3443,8 +3457,8 @@ Transform:
   m_GameObject: {fileID: 1344396217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12478, y: 0.12478, z: 0}
+  m_LocalPosition: {x: 0.1063, y: 0.1016, z: 0}
+  m_LocalScale: {x: 0.18731382, y: 0.18584831, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 998481015}
