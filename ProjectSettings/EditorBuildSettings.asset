@@ -39,69 +39,69 @@ EditorBuildSettings:
     path: Assets/Scenes/ProjectRPG/AREA2.unity
     guid: 6c31de4d83a472a46a1d38171f2d16d6
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3.unity
     guid: d6f7841a7fbbe004fbd9f07b57253a25
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterGoaLawo.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_AfterGoaLawo.unity
     guid: acad0264b653f244e89a6be6e473eea8
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterGoaPawon.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_AfterGoaPawon.unity
     guid: 68097080454ef6342a1150d7a8d43e30
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_DalamMandeBeling.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_DalamMandeBeling.unity
     guid: 3560f5c7404114e459a9d87df55bec73
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaLawo.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_GoaLawo.unity
     guid: bfc3278f88360474e8a5b11f38482f56
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPawon.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_GoaPawon.unity
     guid: 4c0f923923e9d1a4181df8e74bb2fe44
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_GoaPetengLT1.unity
     guid: e18806650245e824e85cfda837a5f5a7
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_GoaPetengLT2.unity
     guid: 426a5af7f93231c468b7353f3beca79b
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_DMB_AfterPetengLT2.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_DMB_AfterPetengLT2.unity
     guid: 5e86cd71314bcbf4daa7fb088f4b7d99
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_DepanMB.unity
+    path: Assets/Scenes/AREA 3/Phase1/Area3_DepanMB.unity
     guid: a517b85b2c855e14a96a7843aba40ad9
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPawon_TASK1_1.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_GoaPawon_TASK1_1.unity
     guid: ddaf4a36fe170dd4989373b144b8b2b7
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterGoaPawon_TASK2_2.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_AfterGoaPawon_TASK2_2.unity
     guid: fbda829c9d7fa4443b685254bb2d6e99
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaLawo_TASK2_3.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_GoaLawo_TASK2_3.unity
     guid: d69880bb29dfefc4490297145df60bc5
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterGoaLawo_TASK3_4.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_AfterGoaLawo_TASK3_4.unity
     guid: 487bf42a1b89fa742a0912fa8c133032
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1_TASK3_5.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_GoaPetengLT1_TASK3_5.unity
     guid: 23e3c842cb4a72e48b748cf42b073383
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT1_TASK3_6.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_GoaPetengLT1_TASK3_6.unity
     guid: 3e969b259d1db204f8bc3ee64f74b05e
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_GoaPetengLT2_TASK3_7.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_GoaPetengLT2_TASK3_7.unity
     guid: 8256eb147ceaf82499e29867ab96da23
   - enabled: 1
-    path: Assets/Scenes/AREA 3/JigsawArea3.unity
+    path: Assets/Scenes/AREA 3/Phase2/JigsawArea3.unity
     guid: f975470742c62214583404aafcf196b3
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterGoaPeteng_TASK4_8.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_AfterGoaPeteng_TASK4_8.unity
     guid: 3e7d42a882c4e164690519d5876a77af
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_KamarKaputren_TASK4_9.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_KamarKaputren_TASK4_9.unity
     guid: 260333944f38df5419cc761e98e5db1d
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterKamarKaputren_TASK5_10.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_AfterKamarKaputren_TASK5_10.unity
     guid: 25a208a9398b59d4fbf39a1d36bf7d95
   - enabled: 1
-    path: Assets/Scenes/AREA 3/Area3_AfterKamarKaputran_TASK5_11.unity
+    path: Assets/Scenes/AREA 3/Phase2/Area3_AfterKamarKaputran_TASK5_11.unity
     guid: bff4bb4711f04784393ddf114be2f18e
   m_configObjects: {}

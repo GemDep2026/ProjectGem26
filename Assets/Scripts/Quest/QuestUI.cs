@@ -1,9 +1,15 @@
-using UnityEngine;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 
 public class QuestUI : MonoBehaviour
 {
-    public TextMeshProUGUI questText;
+    public TextMeshProUGUI questTitle;
+
+    public Transform objectiveContainer;
+    public ObjectiveItemUI objectivePrefab;
+
+    private List<ObjectiveItemUI> objectiveItems = new();
 
     void Update()
     {
@@ -13,21 +19,38 @@ public class QuestUI : MonoBehaviour
 
         if (current == null)
         {
-            questText.text = "All Quests Completed!";
+            questTitle.text = "All Quests Completed!";
             return;
         }
 
-        string text = current.questName + "\n";
+        questTitle.text = current.questName;
 
-        foreach(var obj in current.objectives)
+        RefreshObjectives(current);
+    }
+
+    void RefreshObjectives(Quest quest)
+    {
+        // Tambah UI jika kurang
+        while (objectiveItems.Count < quest.objectives.Count)
         {
-            if(obj.isCompleted)
-                text += "[v] " + obj.objectiveName + "\n";
-            else
-                text += "[ ] " + obj.objectiveName + "\n";
+            ObjectiveItemUI item =
+                Instantiate(objectivePrefab, objectiveContainer);
+
+            objectiveItems.Add(item);
         }
 
-        questText.text = text;
+        // Update semua objective
+        for (int i = 0; i < objectiveItems.Count; i++)
+        {
+            if (i < quest.objectives.Count)
+            {
+                objectiveItems[i].gameObject.SetActive(true);
+                objectiveItems[i].Setup(quest.objectives[i]);
+            }
+            else
+            {
+                objectiveItems[i].gameObject.SetActive(false);
+            }
+        }
     }
 }
-
