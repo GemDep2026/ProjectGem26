@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-
 public class AudioManager : MonoBehaviour
 {
     [Header("- - - - - - - - Audio Source - - - - - - - -")]
@@ -9,75 +8,73 @@ public class AudioManager : MonoBehaviour
     [Header("- - - - - - - - Audio Clip - - - - - - - -")]
     public AudioClip background;
     public AudioClip walking;
-
+    public AudioClip buttonClick;
     [Header("- - - - - - - - Slider - - - - - - - -")]
     public Slider musicSlider;
     public Slider sfxSlider;
-
     [Header("- - - - - - - - Mute Button - - - - - - - -")]
     [SerializeField] private Image muteButtonImage;
     [SerializeField] private Sprite musicOnSprite;
     [SerializeField] private Sprite musicOffSprite;
-
     private bool isMuted = false;
-    private bool isMusicMuted = false;
-
     private void Start()
     {
-        musicSource.clip = background;
-        musicSource.Play();
-
+        if (musicSource != null && background != null)
+        {
+            musicSource.clip = background;
+            musicSource.Play();
+        }
         if (musicSlider != null)
         {
             musicSlider.value = musicSource.volume;
             musicSlider.onValueChanged.AddListener(SetMusicVolume);
         }
-
         if (sfxSlider != null)
         {
             sfxSlider.value = sfxSource.volume;
             sfxSlider.onValueChanged.AddListener(SetSfxVolume);
         }
-
         UpdateMuteButton();
     }
-
     public void SetMusicVolume(float value)
     {
         musicSource.volume = value;
     }
-
     public void SetSfxVolume(float value)
     {
         sfxSource.volume = value;
     }
-
     public void PlaySfx(AudioClip clip)
     {
+        if (clip == null) return;
         sfxSource.PlayOneShot(clip);
     }
-
+    // panggil dari Animation Event pas kaki nyentuh tanah
+    public void PlayWalkingSfx()
+    {
+        PlaySfx(walking);
+    }
+    // panggil di OnClick() tombol UI
+    public void PlayButtonSfx()
+    {
+        PlaySfx(buttonClick);
+    }
     public void ToggleMute()
     {
         isMuted = !isMuted;
-
         musicSource.mute = isMuted;
         sfxSource.mute = isMuted;
-
         UpdateMuteButton();
     }
-
     private void UpdateMuteButton()
     {
         if (muteButtonImage == null) return;
-
         muteButtonImage.sprite = isMuted
             ? musicOffSprite
             : musicOnSprite;
     }
-
-    public bool IsMusicMuted()
+    public bool IsMuted()
     {
-        return isMusicMuted;
+        return isMuted;
     }
 }

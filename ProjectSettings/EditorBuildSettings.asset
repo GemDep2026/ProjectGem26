@@ -23,21 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AREA 2/Area2.unity
     guid: c52faff1de908f041b640185b89ef61d
-  - enabled: 0
-    path: Assets/Scenes/ProjectRPG/Area1_AfterGDP 1.unity
-    guid: ebe850336ae8f11438f1ce4ee5405354
-  - enabled: 0
-    path: Assets/Scenes/ProjectRPG/DalamGDPesanggrahan.unity
-    guid: e4762dcd6843a3141a82fce4c7feeeef
   - enabled: 1
     path: Assets/Scenes/AREA 2/Area2_BJinem.unity
     guid: ecba9a21496904742adbff38f7e0d631
   - enabled: 1
     path: Assets/Scenes/ProjectRPG/Area1.unity
     guid: c910f95bca5c16e40ad55c62bcc26357
-  - enabled: 0
-    path: Assets/Scenes/ProjectRPG/AREA2.unity
-    guid: 6c31de4d83a472a46a1d38171f2d16d6
   - enabled: 1
     path: Assets/Scenes/AREA 3/Phase1/Area3.unity
     guid: d6f7841a7fbbe004fbd9f07b57253a25
