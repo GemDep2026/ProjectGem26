@@ -7,13 +7,8 @@ public class MainMenu : MonoBehaviour
     [Header("Start")]
     public Button startButton;
 
-    [Header("Options")]
-    public Button openOptionsButton;
-    public Button closeOptionsButton;
-    public GameObject optionsPanel;
-
     [Header("Sound")]
-    public Button openSoundButton;   // tombol di dalam Options panel
+    public Button openSoundButton;
     public Button closeSoundButton;
     public GameObject soundPanel;
 
@@ -28,50 +23,45 @@ public class MainMenu : MonoBehaviour
     public Button quitNoButton;
     public GameObject quitPanel;
 
-    void Start()
+    private void Start()
     {
+        HideAllPanels();
+
         startButton.onClick.AddListener(LoadStartScene);
 
-        openOptionsButton.onClick.AddListener(ShowOptionsPanel);
-        closeOptionsButton.onClick.AddListener(HideOptionsPanel);
 
         openSoundButton.onClick.AddListener(ShowSoundPanel);
-        closeSoundButton.onClick.AddListener(HideSoundPanel);
+        closeSoundButton.onClick.AddListener(HideAllPanels);
 
         openCreditsButton.onClick.AddListener(ShowCreditsPanel);
-        closeCreditsButton.onClick.AddListener(HideCreditsPanel);
+        closeCreditsButton.onClick.AddListener(HideAllPanels);
 
         quitButton.onClick.AddListener(ShowQuitPanel);
         quitYesButton.onClick.AddListener(QuitGame);
-        quitNoButton.onClick.AddListener(HideQuitPanel);
+        quitNoButton.onClick.AddListener(HideAllPanels);
     }
 
-    void HideAllPanels()
+    private void HideAllPanels()
     {
-        optionsPanel.SetActive(false);
         soundPanel.SetActive(false);
         creditsPanel.SetActive(false);
         quitPanel.SetActive(false);
     }
 
-    public void LoadStartScene() => SceneManager.LoadScene("Prolog");
+    public void LoadStartScene()
+    {
+        SceneManager.LoadScene("Prolog");
+    }
 
     public void ShowOptionsPanel()
     {
         HideAllPanels();
-        optionsPanel.SetActive(true);
     }
-    public void HideOptionsPanel() => optionsPanel.SetActive(false);
 
     public void ShowSoundPanel()
     {
-        optionsPanel.SetActive(false);
+        HideAllPanels();
         soundPanel.SetActive(true);
-    }
-    public void HideSoundPanel()
-    {
-        soundPanel.SetActive(false);
-        optionsPanel.SetActive(true);
     }
 
     public void ShowCreditsPanel()
@@ -79,14 +69,12 @@ public class MainMenu : MonoBehaviour
         HideAllPanels();
         creditsPanel.SetActive(true);
     }
-    public void HideCreditsPanel() => creditsPanel.SetActive(false);
 
     public void ShowQuitPanel()
     {
         HideAllPanels();
         quitPanel.SetActive(true);
     }
-    public void HideQuitPanel() => quitPanel.SetActive(false);
 
     public void QuitGame()
     {

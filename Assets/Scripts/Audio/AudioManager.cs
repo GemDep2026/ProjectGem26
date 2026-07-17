@@ -14,6 +14,14 @@ public class AudioManager : MonoBehaviour
     public Slider musicSlider;
     public Slider sfxSlider;
 
+    [Header("- - - - - - - - Mute Button - - - - - - - -")]
+    [SerializeField] private Image muteButtonImage;
+    [SerializeField] private Sprite musicOnSprite;
+    [SerializeField] private Sprite musicOffSprite;
+
+    private bool isMuted = false;
+    private bool isMusicMuted = false;
+
     private void Start()
     {
         musicSource.clip = background;
@@ -24,11 +32,14 @@ public class AudioManager : MonoBehaviour
             musicSlider.value = musicSource.volume;
             musicSlider.onValueChanged.AddListener(SetMusicVolume);
         }
+
         if (sfxSlider != null)
         {
             sfxSlider.value = sfxSource.volume;
             sfxSlider.onValueChanged.AddListener(SetSfxVolume);
         }
+
+        UpdateMuteButton();
     }
 
     public void SetMusicVolume(float value)
@@ -44,5 +55,29 @@ public class AudioManager : MonoBehaviour
     public void PlaySfx(AudioClip clip)
     {
         sfxSource.PlayOneShot(clip);
+    }
+
+    public void ToggleMute()
+    {
+        isMuted = !isMuted;
+
+        musicSource.mute = isMuted;
+        sfxSource.mute = isMuted;
+
+        UpdateMuteButton();
+    }
+
+    private void UpdateMuteButton()
+    {
+        if (muteButtonImage == null) return;
+
+        muteButtonImage.sprite = isMuted
+            ? musicOffSprite
+            : musicOnSprite;
+    }
+
+    public bool IsMusicMuted()
+    {
+        return isMusicMuted;
     }
 }

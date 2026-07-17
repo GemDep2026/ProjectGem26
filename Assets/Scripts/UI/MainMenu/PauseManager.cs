@@ -2,59 +2,52 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    [Header("- - - - - - - - Panel - - - - - - - -")]
-    [SerializeField] private GameObject pauseMenuUI;
-    [SerializeField] private GameObject audioMenuUI;
-    [SerializeField] private GameObject settingMenuUI;
+    [Header("Panels")]
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject settingsPanelsParent;
 
     private bool isPaused;
-    private bool isAudioOpen;
-    private bool isSettingOpen;
 
-    public bool TogglePause()
+    private void Start()
+    {
+        pausePanel.SetActive(false);
+        settingsPanelsParent.SetActive(false);
+        settingsPanel.SetActive(false);
+    }
+
+    // Tombol Pause
+    public void TogglePause()
     {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0f : 1f;
-        pauseMenuUI.SetActive(isPaused);
-        return isPaused;
+        pausePanel.SetActive(isPaused);
+
+        if (!isPaused)
+        {
+            settingsPanel.SetActive(false);
+            settingsPanelsParent.SetActive(false);
+        }
     }
 
     public void Resume()
     {
         isPaused = false;
         Time.timeScale = 1f;
-        pauseMenuUI.SetActive(false);
-
-        // pastikan panel anak ikut ketutup pas resume
-        isAudioOpen = false;
-        isSettingOpen = false;
-        audioMenuUI.SetActive(false);
-        settingMenuUI.SetActive(false);
+        settingsPanel.SetActive(false);
+        settingsPanelsParent.SetActive(false);
+        pausePanel.SetActive(false);
     }
 
-    public bool ToggleAudioMenu()
+    public void OpenSettings()
     {
-        isAudioOpen = !isAudioOpen;
-        audioMenuUI.SetActive(isAudioOpen);
-        return isAudioOpen;
+        settingsPanelsParent.SetActive(true);
+        settingsPanel.SetActive(true);
     }
 
-    public void CloseAudioMenu()
+    public void CloseSettings()
     {
-        isAudioOpen = false;
-        audioMenuUI.SetActive(false);
-    }
-
-    public bool ToggleSettingMenu()
-    {
-        isSettingOpen = !isSettingOpen;
-        settingMenuUI.SetActive(isSettingOpen);
-        return isSettingOpen;
-    }
-
-    public void CloseSettingMenu()
-    {
-        isSettingOpen = false;
-        settingMenuUI.SetActive(false);
+        settingsPanel.SetActive(false);
+        settingsPanelsParent.SetActive(false);
     }
 }
