@@ -743,18 +743,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0072631836, y: -0.792799}
+  m_Offset: {x: 0.0072631836, y: -0.34684318}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.84, y: 3.54}
+    oldSize: {x: 2.68, y: 2.68}
     newSize: {x: 20.13, y: 9.73}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0526962, y: 1.5480919}
+  m_Size: {x: 2.0526962, y: 1.6330358}
   m_EdgeRadius: 0
 --- !u!212 &265123462
 SpriteRenderer:
@@ -797,7 +797,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a5fe3d8b21e629146b1a24bda9e3ba0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f0aee3de4079a84fa0ec327c91c790f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -817,7 +817,7 @@ Transform:
   m_GameObject: {fileID: 265123459}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 1.61, z: 0}
+  m_LocalPosition: {x: 1.06, y: 1.38, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1317,7 +1317,7 @@ Transform:
   m_GameObject: {fileID: 315284601}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.49, z: 0}
   m_LocalScale: {x: 0.38731998, y: 0.35551998, z: 0.106139995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3970,7 +3970,7 @@ Transform:
   m_GameObject: {fileID: 1584298631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.32, z: 0.059999995}
+  m_LocalPosition: {x: 0, y: 0.81, z: 0.059999995}
   m_LocalScale: {x: 0.12478, y: 0.12478, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4119,9 +4119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1780500021}
-  inkJSON: {fileID: 4900000, guid: 7a96e1407b15841459fe0dc62735e51e, type: 3}
+  inkJSON: {fileID: 4900000, guid: 2716ee51e9791064facb2f9f5ae1d5e7, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 7a96e1407b15841459fe0dc62735e51e, type: 3}
+  - {fileID: 4900000, guid: 2716ee51e9791064facb2f9f5ae1d5e7, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000

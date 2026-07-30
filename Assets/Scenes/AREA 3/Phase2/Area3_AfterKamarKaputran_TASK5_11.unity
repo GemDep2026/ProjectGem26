@@ -1298,13 +1298,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1584298631}
-  inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  inkJSON: {fileID: 4900000, guid: 1de14a47217272d40b602e19b9601814, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
-  guideTargetSteps: 0000000000000000
-  questID: 0000000000000000
-  objectiveIndex: 0000000000000000
+  - {fileID: 4900000, guid: 1de14a47217272d40b602e19b9601814, type: 3}
+  - {fileID: 4900000, guid: 584763a870846dd47afe28c2f2c188e1, type: 3}
+  - {fileID: 4900000, guid: 9bedaf1d4bb0bff4e89f4e7b24a6c207, type: 3}
+  guideTargetSteps: 000000000000000000000000
+  questID: 000000000000000000000000
+  objectiveIndex: 000000000000000000000000
   completeObjectiveAfterDialogue: 1
   startGuideAfterDialogue: 1
   npcMovement: {fileID: 485818611}
@@ -1312,12 +1313,14 @@ MonoBehaviour:
   activateObjects:
   - objects:
     - {fileID: 1514576564}
+  - objects: []
   - objects:
-    - {fileID: 879035352}
+    - {fileID: 1271328872}
   deactivateObjects:
   - objects:
     - {fileID: 315284601}
     - {fileID: 1584298631}
+  - objects: []
   - objects:
     - {fileID: 265123459}
     - {fileID: 315284601}
@@ -3002,7 +3005,7 @@ Transform:
   m_GameObject: {fileID: 1007282605}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.06, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.83, z: 0}
   m_LocalScale: {x: 0.38731998, y: 0.35551998, z: 0.106139995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3021,9 +3024,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1492204513}
-  inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  inkJSON: {fileID: 4900000, guid: 2dc1027ad64eeec4e836f05c069a7b1f, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: 2dc1027ad64eeec4e836f05c069a7b1f, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -3584,18 +3587,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0072631836, y: -0.792799}
+  m_Offset: {x: 0.0072631836, y: -0.049723625}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.84, y: 3.54}
+    oldSize: {x: 1.85, y: 1.85}
     newSize: {x: 19.34, y: 11.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0526962, y: 1.5480919}
+  m_Size: {x: 2.0526962, y: 1.6233387}
   m_EdgeRadius: 0
 --- !u!212 &1116985814
 SpriteRenderer:
@@ -3638,7 +3641,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a5fe3d8b21e629146b1a24bda9e3ba0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9dece5cd4a153147a759c1955c12d15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3658,7 +3661,7 @@ Transform:
   m_GameObject: {fileID: 1116985811}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.41, y: -11.2, z: 0}
+  m_LocalPosition: {x: -6.41, y: -11.692, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3693,7 +3696,7 @@ Transform:
   m_GameObject: {fileID: 1129638148}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.06, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.65500015, z: 0}
   m_LocalScale: {x: 0.38731998, y: 0.35551998, z: 0.106139995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3712,9 +3715,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1616249255}
-  inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  inkJSON: {fileID: 4900000, guid: 6316e44080b455e46918da8006ed64cf, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: 6316e44080b455e46918da8006ed64cf, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -4806,7 +4809,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: b54f25b317378f34e961539e65d7c7e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4827,7 +4830,7 @@ Transform:
   m_GameObject: {fileID: 1492204513}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.62, z: 0.059999995}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0.059999995}
   m_LocalScale: {x: 0.12478, y: 0.12478, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4892,7 +4895,7 @@ Transform:
   m_GameObject: {fileID: 1514576564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.06, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0.51000005, z: 0}
   m_LocalScale: {x: 0.38731998, y: 0.35551998, z: 0.106139995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4911,9 +4914,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1848047642}
-  inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  inkJSON: {fileID: 4900000, guid: 363b3452098f9eb46a4cf2748d3f9b49, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: 363b3452098f9eb46a4cf2748d3f9b49, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -5199,7 +5202,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: b54f25b317378f34e961539e65d7c7e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5220,7 +5223,7 @@ Transform:
   m_GameObject: {fileID: 1616249255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.62, z: 0.059999995}
+  m_LocalPosition: {x: 0, y: 0.97, z: 0.059999995}
   m_LocalScale: {x: 0.12478, y: 0.12478, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5304,11 +5307,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0072631836, y: -0.792799}
+  m_Offset: {x: 0.0072631836, y: -0.07101917}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.84, y: 3.54}
+    oldSize: {x: 1.85, y: 1.85}
     newSize: {x: 19.34, y: 11.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5358,7 +5361,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a5fe3d8b21e629146b1a24bda9e3ba0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9dece5cd4a153147a759c1955c12d15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5378,7 +5381,7 @@ Transform:
   m_GameObject: {fileID: 1619585326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.44, y: 7.51, z: 0}
+  m_LocalPosition: {x: -5.44, y: 7.107, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5764,9 +5767,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1746901843}
-  inkJSON: {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  inkJSON: {fileID: 4900000, guid: f6e9403b9b4dca54694be7f3334dbf56, type: 3}
   guideDialogues:
-  - {fileID: 4900000, guid: 81dfb2544e46b494f84f1e3a07bff0fc, type: 3}
+  - {fileID: 4900000, guid: f6e9403b9b4dca54694be7f3334dbf56, type: 3}
   guideTargetSteps: 00000000
   questID: 00000000
   objectiveIndex: 00000000
@@ -6096,7 +6099,7 @@ Transform:
   m_GameObject: {fileID: 1848047642}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.62, z: 0.059999995}
+  m_LocalPosition: {x: 0, y: 0.71, z: 0.059999995}
   m_LocalScale: {x: 0.12478, y: 0.12478, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6393,18 +6396,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0072631836, y: -0.792799}
+  m_Offset: {x: 0.0072631836, y: -0.31432247}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.84, y: 3.54}
+    oldSize: {x: 2.68, y: 2.68}
     newSize: {x: 19.34, y: 11.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0526962, y: 1.5480919}
+  m_Size: {x: 2.0526962, y: 1.7561252}
   m_EdgeRadius: 0
 --- !u!212 &2046919193
 SpriteRenderer:
@@ -6447,7 +6450,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a5fe3d8b21e629146b1a24bda9e3ba0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f0aee3de4079a84fa0ec327c91c790f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6467,7 +6470,7 @@ Transform:
   m_GameObject: {fileID: 2046919190}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.323, y: -0.142, z: 0}
+  m_LocalPosition: {x: -11.323, y: -0.295, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6537,6 +6540,12 @@ MonoBehaviour:
       isCompleted: 0
     - objectiveName: Temukan petunjuk di sekitar Bale Kambang (2/2)
       isCompleted: 1
+  - sceneName: Area3
+    questID: 0
+    questName: 
+    objectives:
+    - objectiveName: Interact lagi ke kayu penghalang
+      isCompleted: 0
   - sceneName: Area3
     questID: 0
     questName: 
