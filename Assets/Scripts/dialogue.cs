@@ -160,7 +160,8 @@ public class dialogue : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Cutscene image dengan tag '" + tagName + "' tidak ditemukan di list inkCutsceneSprites!");
+            inkCutsceneImage.gameObject.SetActive(false);
+            Debug.LogWarning("Cutscene image dengan tag '" + tagName + "' tidak ditemukan/sprite kosong di list inkCutsceneSprites!");
         }
     }
 
