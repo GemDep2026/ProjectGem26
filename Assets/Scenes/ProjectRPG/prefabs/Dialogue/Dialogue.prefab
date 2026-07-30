@@ -49,3 +49,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 0}
   typingSpeed: 0.04
   nextSceneName: Area1
+  npcMovement: {fileID: 0}
+  guideTargetSteps: 
+  useFadeTransition: 1
+  blackScreen: {fileID: 0}
+  fadeDuration: 1
+  inkCutsceneImage: {fileID: 0}
+  inkCutsceneSprites: []
