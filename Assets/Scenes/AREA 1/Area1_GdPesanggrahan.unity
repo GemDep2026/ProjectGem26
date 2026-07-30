@@ -5587,8 +5587,6 @@ MonoBehaviour:
     objectives:
     - objectiveName: Ngobrol NPC Tourguide
       isCompleted: 0
-    - objectiveName: Ngobrol NPC Tourguide
-      isCompleted: 1
   - sceneName: Area1_GdPesanggrahan
     questID: 0
     questName: 
