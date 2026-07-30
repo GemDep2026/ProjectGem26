@@ -1,3 +1,3 @@
-Baskara : “Ini sekarang kita ada dimana Pak? Bahkan jaraknya saja tidak jauh dari goa pawon yang ada dibawah tadi seharusnya tidak akan jauh berbeda kan Pak?”
-TG : “Ini namanya Gua Lawa, mari ikuti saya kedalam supaya kalian tau apa perbedaannya”
-Yuda : “Baik Pak, ayok kita jalan!”
+“Ini sekarang kita ada di mana, Pak? Bahkan jaraknya saja tidak jauh dari Gua Pawon yang ada di bawah tadi. Seharusnya tidak akan jauh berbeda kan, Pak?” #speaker:Baskara #portrait:baskara_confused #layout:right
+“Ini namanya Gua Lawa. Mari ikuti saya ke dalam supaya kalian tahu apa perbedaannya.” #speaker:Tour Guide #portrait:tourguide_wide_smile #layout:left
+“Baik, Pak! Ayo kita jalan!” #speaker:Yuda #portrait:yuda_laugh #layout:right
