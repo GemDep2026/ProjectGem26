@@ -1,12 +1,12 @@
 -> main
 
 === main ===
-“Sudah sekian lama sejak terakhir kali kalian bertemu. Terhitung sudah empat tahun lamanya." # cutscene:lagihapean
-"Dulunya, kalian adalah tiga sekawan yang tak terpisahkan, tinggal berdekatan dan satu kelas. Kalian selalu bermain bersama dan belajar bersama.” # cutscene:lagihapean
-“Semenjak Yuda, pindah sekolah ke kota besar saat kelas 2 SMP karena ikut ayahnya, kalian terpaksa berpisah." # cutscene:lagihapean
-"Semenjak itu, kalian hanya berkomunikasi via chat, itupun tidak intens. Hingga beberapa hari yang lalu, Yuda memberi kabar bahwa ia berencana pulang ke Cirebon untuk beberapa hari untuk berlibur." # cutscene:lagihapean
-"Kini, kamu bersemangat untuk kembali bertemu dengan sahabat lamamu.” # cutscene:lagihapean
-“Kini, kalian sedang berdiskusi untuk merencanakan tempat yang akan dikunjungi” # cutscene:lagihapean
+“Sudah sekian lama sejak terakhir kali kalian bertemu. Terhitung sudah empat tahun lamanya." # cutscene:flashback
+"Dulunya, kalian adalah tiga sekawan yang tak terpisahkan, tinggal berdekatan dan satu kelas. Kalian selalu bermain bersama dan belajar bersama.” # cutscene:flashback
+“Semenjak Yuda, pindah sekolah ke kota besar saat kelas 2 SMP karena ikut ayahnya, kalian terpaksa berpisah." # cutscene:flashback
+"Semenjak itu, kalian hanya berkomunikasi via chat, itupun tidak intens. Hingga beberapa hari yang lalu, Yuda memberi kabar bahwa ia berencana pulang ke Cirebon untuk beberapa hari untuk berlibur." # cutscene:flashback
+"Kini, kamu bersemangat untuk kembali bertemu dengan sahabat lamamu.” # cutscene:flashback
+“Kini, kalian sedang berdiskusi untuk merencanakan tempat yang akan dikunjungi” # cutscene:flashback
 Gita : “Haloo, apakah kalian punya ide kita mau kemana?” # cutscene:lagihapean
 Baskara : “Entahlah, di Cirebon gak banyak yang bisa dikunjungi bukan? Ngemall pun sudah bosan.” # cutscene:lagihapean
 Yuda : “Iya,,, kalau begitu jangan ke mall.” # cutscene:lagihapean
