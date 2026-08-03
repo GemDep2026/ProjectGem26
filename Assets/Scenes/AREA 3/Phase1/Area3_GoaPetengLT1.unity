@@ -2631,6 +2631,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1118524109 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4319005042441533989, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+  m_PrefabInstance: {fileID: 273244479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1165412926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2914,6 +2925,10 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneImage
+      value: 
+      objectReference: {fileID: 1118524109}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: useFadeTransition
       value: 1

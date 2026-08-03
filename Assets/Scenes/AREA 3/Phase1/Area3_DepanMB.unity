@@ -1903,6 +1903,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneImage
+      value: 
+      objectReference: {fileID: 1980394425}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: useFadeTransition
       value: 1
       objectReference: {fileID: 0}
@@ -1911,8 +1915,100 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: guideTargetSteps.Array.data[0]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cebaabeea5f90a4f98723a5d31ff5d2, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c407d147212521e4392c176477713f1f, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e9f567d0aacf6646a8d3c3c60120e6a, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a85c22b4ab04c394db606d27d602ab5c, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[4].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d0d281d0c64bf947b4bcb523b1dfc79, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[5].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a3f71e0de81fd14db596f8e24430be0, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[6].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 144b218af3c0cc7498a07e5aae5307c5, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[7].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e39e5cb5764e4d4f975c749520a85c6, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[8].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1cd94091ce6f5f4f98c173ca6b7f43f, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[9].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f13c57e24351724bbd963fcc3143b80, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[0].tagName
+      value: Cutscene_Conflict_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[10].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a910adfff14edd4daeee6d454c7da86, type: 3}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[1].tagName
+      value: Cutscene_Conflict_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[2].tagName
+      value: Cutscene_Conflict_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[3].tagName
+      value: Cutscene_Conflict_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[4].tagName
+      value: Cutscene_Conflict_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[5].tagName
+      value: Cutscene_Conflict_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[6].tagName
+      value: Cutscene_Conflict_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[7].tagName
+      value: Cutscene_Conflict_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[8].tagName
+      value: Cutscene_Conflict_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[9].tagName
+      value: Cutscene_Conflict_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
+      propertyPath: inkCutsceneSprites.Array.data[10].tagName
+      value: Cutscene_Conflict_11
       objectReference: {fileID: 0}
     - target: {fileID: 2815307964358679045, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4224,6 +4320,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8786963034434626520, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
   m_PrefabInstance: {fileID: 1980394421}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1980394425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4319005042441533989, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+  m_PrefabInstance: {fileID: 1980394421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2030807734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3474745061767945813, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}

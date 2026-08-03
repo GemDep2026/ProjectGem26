@@ -30,6 +30,16 @@ public class dialogue : MonoBehaviour
     [SerializeField] private CanvasGroup blackScreen;
     [SerializeField] private float fadeDuration = 1f;
 
+    [System.Serializable]
+    public class NamedSprite
+    {
+        public string tagName;
+        public Sprite sprite;
+    }
+
+    [Header("Ink Cutscene Tags")]
+    [SerializeField] private Image inkCutsceneImage; // bisa pakai Image yang sama kayak cutsceneImage, atau bikin baru
+    [SerializeField] private List<NamedSprite> inkCutsceneSprites = new List<NamedSprite>();
 
     private Story story;
     private Coroutine typingCoroutine;
@@ -83,6 +93,7 @@ public class dialogue : MonoBehaviour
         if (story.canContinue)
         {
             string nextLine = story.Continue();
+            HandleCutsceneTags(story.currentTags);
 
             if (typingCoroutine != null)
                 StopCoroutine(typingCoroutine);
@@ -92,6 +103,9 @@ public class dialogue : MonoBehaviour
         else
         {
             dialogueEnded = true;
+
+            if (inkCutsceneImage != null)
+                inkCutsceneImage.gameObject.SetActive(false); 
 
             SetPlayerMovement(true);
 
@@ -107,6 +121,47 @@ public class dialogue : MonoBehaviour
             }
 
             StartCoroutine(LoadNextScene());
+        }
+    }
+
+    void HandleCutsceneTags(List<string> tags)
+    {
+        bool hasCutsceneTag = false;
+
+        if (tags != null)
+        {
+            foreach (string tag in tags)
+            {
+                if (tag.StartsWith("cutscene:"))
+                {
+                    string imageName = tag.Substring("cutscene:".Length).Trim();
+                    ShowInkCutsceneImage(imageName);
+                    hasCutsceneTag = true;
+                }
+            }
+        }
+
+        if (!hasCutsceneTag && inkCutsceneImage != null)
+        {
+            inkCutsceneImage.gameObject.SetActive(false);
+        }
+    }
+
+    void ShowInkCutsceneImage(string tagName)
+    {
+        if (inkCutsceneImage == null) return;
+
+        NamedSprite found = inkCutsceneSprites.Find(s => s.tagName == tagName);
+
+        if (found != null && found.sprite != null)
+        {
+            inkCutsceneImage.sprite = found.sprite;
+            inkCutsceneImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            inkCutsceneImage.gameObject.SetActive(false);
+            Debug.LogWarning("Cutscene image dengan tag '" + tagName + "' tidak ditemukan/sprite kosong di list inkCutsceneSprites!");
         }
     }
 
