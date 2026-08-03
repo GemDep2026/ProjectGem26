@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17235456602f07b4da4a0128212e5a16
+guid: d830740c46166ef468729e2431722330
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_2157_0
+      name: ripped paper scraped (exploration)_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 1136
-        width: 915
-        height: 998
+        x: 417
+        y: 641
+        width: 564
+        height: 454
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f9e735b71349f14e91bf004287a6ef1
-      internalID: -1410574202
+      spriteID: f71f0176b18e69644b3aa5b86df3bb11
+      internalID: 959868058
       vertices: []
       indices: 
       edges: []
@@ -180,7 +180,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IMG_2157_0: -1410574202
+      ripped paper scraped (exploration)_0: 959868058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
