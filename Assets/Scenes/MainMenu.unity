@@ -1425,8 +1425,8 @@ MonoBehaviour:
   closeSoundButton: {fileID: 326479317}
   soundPanel: {fileID: 1072374736}
   openCreditsButton: {fileID: 86764637}
-  closeCreditsButton: {fileID: 0}
-  creditsPanel: {fileID: 0}
+  closeCreditsButton: {fileID: 1974788201}
+  creditsPanel: {fileID: 556049636}
   quitButton: {fileID: 1571071855}
   quitYesButton: {fileID: 697238191}
   quitNoButton: {fileID: 388640446}
@@ -2690,7 +2690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0, y: 69}
+  m_AnchoredPosition: {x: 0, y: 69}
   m_SizeDelta: {x: 486.08, y: 128.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789772502
