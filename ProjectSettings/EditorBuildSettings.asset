@@ -92,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AREA 3/Phase2/Area3_AfterKamarKaputran_TASK5_11.unity
     guid: bff4bb4711f04784393ddf114be2f18e
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 958fc6c8acb483649996b4e974dbe583
   m_configObjects: {}

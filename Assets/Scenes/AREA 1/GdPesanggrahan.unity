@@ -584,25 +584,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1072204449}
     m_Modifications:
-    - target: {fileID: 402982800342435065, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 402982800342435065, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 402982800342435065, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
     - target: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Pivot.x
@@ -683,18 +667,6 @@ PrefabInstance:
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7609934191070741298, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7609934191070741298, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7609934191070741298, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -786199541
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3973,22 +3945,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 964521917190524779, guid: 1064d5d944c2273448d05e676b607193, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964521917190524779, guid: 1064d5d944c2273448d05e676b607193, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964521917190524779, guid: 1064d5d944c2273448d05e676b607193, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964521917190524779, guid: 1064d5d944c2273448d05e676b607193, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1963804630868371956, guid: 1064d5d944c2273448d05e676b607193, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4069,10 +4025,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4080018808421789893, guid: 1064d5d944c2273448d05e676b607193, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 349695445}
     - target: {fileID: 6094328203995082496, guid: 1064d5d944c2273448d05e676b607193, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

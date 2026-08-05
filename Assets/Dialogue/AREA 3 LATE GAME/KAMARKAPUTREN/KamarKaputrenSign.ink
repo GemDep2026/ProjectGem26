@@ -1,0 +1,1 @@
+Kaputran dan kaputren adalah tempat belajar atau penggemblengan anak-anak sultan. Kaputran untuk anak laki-laki, dan Kaputren untuk perempuan. Karena diperuntukkan untuk anak perempuan, dan dalam islam, aurat dari perempuan itu lebih banyak, kamar kaputren didesain untuk lebih tertutup.
