@@ -4162,11 +4162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1500
+      value: 1347.4595
       objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 312.52
       objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4219,30 +4219,6 @@ PrefabInstance:
     - target: {fileID: 3448013420411516780, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3448013420411516780, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7238113805855939422, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238113805855939422, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238113805855939422, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5077,10 +5053,6 @@ PrefabInstance:
     - target: {fileID: 3594899087695799777, guid: 62f50c96442b7ca48b7c2cc66aa789ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5105413387300866649, guid: 62f50c96442b7ca48b7c2cc66aa789ec, type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1472,7 +1472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Pivot.x
@@ -1557,6 +1557,10 @@ PrefabInstance:
     - target: {fileID: 7609934191070741298, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_RenderMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609934191070741298, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3591,9 +3595,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 273244480}
   - {fileID: 277592715}
   - {fileID: 1475966674}
-  - {fileID: 273244480}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1613540974
@@ -4354,14 +4358,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 277592715}
     m_Modifications:
-    - target: {fileID: 176058225966725372, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 315.4542
-      objectReference: {fileID: 0}
-    - target: {fileID: 176058225966725372, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -485.2729
-      objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4388,11 +4384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1500
+      value: 1347.4595
       objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 312.52
       objectReference: {fileID: 0}
     - target: {fileID: 1144095516804004472, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4446,46 +4442,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialoguePanel
       objectReference: {fileID: 0}
-    - target: {fileID: 3448013420411516780, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453167289178501681, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 4847511290987982322, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 4847511290987982322, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 7238113805855939422, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238113805855939422, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238113805855939422, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8063590444403024305, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 8063590444403024305, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
