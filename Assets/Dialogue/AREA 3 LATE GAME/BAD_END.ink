@@ -1,0 +1,1 @@
+" Kamu memutuskan untuk naik. Entah bagaimana, kamu tiba-tiba berada di area Gunung Jati Sialnya kamu nggak bisa balik, dan sinyal pun nggak ada. Yuda masih belum ditemukan sampai sore hari. "
