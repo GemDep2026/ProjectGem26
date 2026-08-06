@@ -1909,43 +1909,43 @@ PrefabInstance:
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[0].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6cebaabeea5f90a4f98723a5d31ff5d2, type: 3}
+      objectReference: {fileID: 21300000, guid: 3740573758772574d8299517defbc856, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[1].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c407d147212521e4392c176477713f1f, type: 3}
+      objectReference: {fileID: 21300000, guid: 7539258c3fc893e4485eed0160f1ab95, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[2].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2e9f567d0aacf6646a8d3c3c60120e6a, type: 3}
+      objectReference: {fileID: 21300000, guid: ef414630e8c125146840d51e4abd829c, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[3].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a85c22b4ab04c394db606d27d602ab5c, type: 3}
+      objectReference: {fileID: 21300000, guid: 3168e41d72ccd4048a74d54874717d65, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[4].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5d0d281d0c64bf947b4bcb523b1dfc79, type: 3}
+      objectReference: {fileID: 21300000, guid: 2fe807a69d57ade48b3b1fae268ad8de, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[5].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3a3f71e0de81fd14db596f8e24430be0, type: 3}
+      objectReference: {fileID: 21300000, guid: 0f3a59d2f762d3f42af402fdc3f68886, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[6].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 144b218af3c0cc7498a07e5aae5307c5, type: 3}
+      objectReference: {fileID: 21300000, guid: cc1d7337a14b64e459f216696233eb8f, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[7].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6e39e5cb5764e4d4f975c749520a85c6, type: 3}
+      objectReference: {fileID: 21300000, guid: 50377fab172158c489e9259236a38524, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[8].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e1cd94091ce6f5f4f98c173ca6b7f43f, type: 3}
+      objectReference: {fileID: 21300000, guid: c23ae265606a64f4e8cc7db3b24eadf1, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[9].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9f13c57e24351724bbd963fcc3143b80, type: 3}
+      objectReference: {fileID: 21300000, guid: 0fe0fbf4c63dad84d94e0016021f6a0d, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[0].tagName
       value: Cutscene_Conflict_1
@@ -1953,7 +1953,7 @@ PrefabInstance:
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[10].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0a910adfff14edd4daeee6d454c7da86, type: 3}
+      objectReference: {fileID: 21300000, guid: f2a01e57ff455bf4284b8f93999fe9e5, type: 3}
     - target: {fileID: 1158616283142392707, guid: 6f6c2780f7cf7c24cb825e4c8d08b62e, type: 3}
       propertyPath: inkCutsceneSprites.Array.data[1].tagName
       value: Cutscene_Conflict_2
