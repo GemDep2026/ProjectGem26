@@ -3355,6 +3355,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 178785382730120362, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 178785382730120362, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 85548877b2dbbb2459cf97b336573db4, type: 3}
     - target: {fileID: 536121541656210724, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1094.3938
@@ -3395,10 +3403,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2574410737118582556, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1c4f2e2817a816843a1cb76a4f7a8ffb, type: 3}
     - target: {fileID: 5017672183156024607, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
       propertyPath: sfxSlider
       value: 
       objectReference: {fileID: 2014358977}
+    - target: {fileID: 5017672183156024607, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 8300000, guid: 85548877b2dbbb2459cf97b336573db4, type: 3}
     - target: {fileID: 5017672183156024607, guid: 9092246cbbb31cf49a7499ab916ba584, type: 3}
       propertyPath: musicSlider
       value: 
