@@ -3933,7 +3933,7 @@ PrefabInstance:
     - target: {fileID: 8063590444403024305, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 9a652b62f7e6fdf479bb01ca72484441, type: 2}
     - target: {fileID: 8063590444403024305, guid: 3d41a75f363c39f4f9c1009cad57424f, type: 3}
       propertyPath: m_sharedMaterial
       value: 
