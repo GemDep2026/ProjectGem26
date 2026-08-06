@@ -9,6 +9,9 @@ public class PieceScript : MonoBehaviour
     public bool Selected;
     public bool AllPieceInCurrentPosition;
 
+    [Header("UI")]
+    [SerializeField] private GameObject completePanel;
+
     [Header("Scene")]
     [SerializeField] private string sceneToLoad = "MapMain";
 
@@ -51,6 +54,14 @@ public class PieceScript : MonoBehaviour
         }
 
         // Semua puzzle selesai
+        if (completePanel != null)
+        {
+            completePanel.SetActive(true);
+        }
+    }
+
+    public void NextScene()
+    {
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
             SceneManager.LoadScene(sceneToLoad);

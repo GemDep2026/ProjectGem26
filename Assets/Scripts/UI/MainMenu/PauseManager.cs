@@ -50,4 +50,10 @@ public class PauseManager : MonoBehaviour
         settingsPanel.SetActive(false);
         settingsPanelsParent.SetActive(false);
     }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
 }
