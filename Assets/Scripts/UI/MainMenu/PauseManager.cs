@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
@@ -7,6 +8,10 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject settingsPanelsParent;
 
+    [SerializeField] private Image muteButtonImage;
+    [SerializeField] private Sprite musicOn;
+    [SerializeField] private Sprite musicOff;
+
     private bool isPaused;
 
     private void Start()
@@ -14,6 +19,8 @@ public class PauseManager : MonoBehaviour
         pausePanel.SetActive(false);
         settingsPanelsParent.SetActive(false);
         settingsPanel.SetActive(false);
+        
+        UpdateMuteIcon();
     }
 
     // Tombol Pause
@@ -55,5 +62,29 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
+
+    public void PlaySFX()
+    {
+        if (AudioManager.Instance != null && AudioManager.Instance.sfxSource != null && AudioManager.Instance.buttonClick != null)
+        {
+            AudioManager.Instance.sfxSource.PlayOneShot(AudioManager.Instance.buttonClick);
+        }
+    }
+
+    public void MuteMusic()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.ToggleMute();
+            UpdateMuteIcon();
+        }
+    }
+    
+    private void UpdateMuteIcon()
+    {
+        muteButtonImage.sprite = AudioManager.Instance.IsMuted()
+            ? musicOff
+            : musicOn;
     }
 }

@@ -23,9 +23,14 @@ public class MainMenu : MonoBehaviour
     public Button quitNoButton;
     public GameObject quitPanel;
 
+    [SerializeField] private Image muteButtonImage;
+    [SerializeField] private Sprite musicOn;
+    [SerializeField] private Sprite musicOff;
+
     private void Start()
     {
         HideAllPanels();
+        UpdateMuteIcon();
 
         startButton.onClick.AddListener(LoadStartScene);
 
@@ -80,5 +85,29 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Game is quitting...");
         Application.Quit();
+    }
+
+    public void PlaySFX()
+    {
+        if (AudioManager.Instance != null && AudioManager.Instance.sfxSource != null && AudioManager.Instance.buttonClick != null)
+        {
+            AudioManager.Instance.sfxSource.PlayOneShot(AudioManager.Instance.buttonClick);
+        }
+    }
+
+    public void MuteMusic()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.ToggleMute();
+            UpdateMuteIcon();
+        }
+    }
+    
+    private void UpdateMuteIcon()
+    {
+        muteButtonImage.sprite = AudioManager.Instance.IsMuted()
+            ? musicOff
+            : musicOn;
     }
 }

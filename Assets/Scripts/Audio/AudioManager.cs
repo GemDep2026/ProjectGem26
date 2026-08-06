@@ -27,6 +27,11 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        isMuted = PlayerPrefs.GetInt("IsMuted", 0) == 1;
+
+        musicSource.mute = isMuted;
+        sfxSource.mute = isMuted;
+
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -80,10 +85,13 @@ public class AudioManager : MonoBehaviour
         isMuted = !isMuted;
         musicSource.mute = isMuted;
         sfxSource.mute = isMuted;
-        UpdateMuteButton();
+
+        PlayerPrefs.SetInt("IsMuted", isMuted ? 1 : 0);
+        PlayerPrefs.Save();
+        // UpdateMuteButton();
     }
 
-    private void UpdateMuteButton()
+    public void UpdateMuteButton()
     {
         if (muteButtonImage == null) return;
         muteButtonImage.sprite = isMuted ? musicOffSprite : musicOnSprite;
