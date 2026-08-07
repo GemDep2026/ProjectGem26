@@ -918,6 +918,9 @@ MonoBehaviour:
   quitYesButton: {fileID: 0}
   quitNoButton: {fileID: 0}
   quitPanel: {fileID: 0}
+  muteButtonImage: {fileID: 0}
+  musicOn: {fileID: 0}
+  musicOff: {fileID: 0}
 --- !u!4 &202323184
 Transform:
   m_ObjectHideFlags: 0
@@ -1300,16 +1303,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3911840007291274465, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911840007291274465, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1152
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911840007291274465, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10.83
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3911840007291274465, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10.83
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3911840007291274465, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.83
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3911840007291274465, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1322,7 +1333,11 @@ PrefabInstance:
     - target: {fileID: 5239363646956990278, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 248ac11266c93f64fa30750a73f9984b, type: 3}
+      objectReference: {fileID: 21300000, guid: 341cef832545b49419a942f80966576f, type: 3}
+    - target: {fileID: 5322045652018712605, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7029955143062154429, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1997,6 +2012,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4178709951878032271, guid: 5fc72d8c7a3cec940a8327d636cfb4f5, type: 3}
   m_PrefabInstance: {fileID: 411785340}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &465995232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1534416996880934785, guid: 62f50c96442b7ca48b7c2cc66aa789ec, type: 3}
+  m_PrefabInstance: {fileID: 1830290797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &485818609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2404,11 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &757740406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409034478610075590, guid: fae4f941805ff37408161c16be1d40e6, type: 3}
+  m_PrefabInstance: {fileID: 236582670}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &785463138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,13 +3840,19 @@ MonoBehaviour:
     - {fileID: 2133720229}
     - {fileID: 638847847}
     - {fileID: 1765245163}
+    - {fileID: 465995232}
   deactivateObjects:
   - objects:
     - {fileID: 1616220710}
     - {fileID: 971589416}
+    - {fileID: 757740406}
   sceneAfterDialogue: []
-  activateBeforeDialogue: []
-  deactivateBeforeDialogue: []
+  activateBeforeDialogue:
+  - objects:
+    - {fileID: 757740406}
+  deactivateBeforeDialogue:
+  - objects:
+    - {fileID: 465995232}
 --- !u!61 &1616220713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4309,11 +4340,17 @@ MonoBehaviour:
   activateAfterDialogue:
   - objects:
     - {fileID: 2133720229}
-  deactivateAfterDialogue: []
-  activateBeforeDialogue: []
+    - {fileID: 465995232}
+  deactivateAfterDialogue:
+  - objects:
+    - {fileID: 757740406}
+  activateBeforeDialogue:
+  - objects:
+    - {fileID: 757740406}
   deactivateBeforeDialogue:
   - objects:
     - {fileID: 2133720229}
+    - {fileID: 465995232}
 --- !u!61 &1765245166
 BoxCollider2D:
   m_ObjectHideFlags: 0
